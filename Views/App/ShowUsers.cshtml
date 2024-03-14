@@ -1,0 +1,10 @@
+@model IEnumerable<User>
+
+<h1>Users</h1>
+
+<ul>
+@foreach (var u in Model)
+{
+    <li>@u.firstName</li>
+}
+</ul>

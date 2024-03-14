@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/nick/Files/Classwork/Y3 S2/Software Engineering/TigerTix/TigerTix.Web/TigerTix.Web.csproj": {}
+  },
+  "projects": {
+    "/Users/nick/Files/Classwork/Y3 S2/Software Engineering/TigerTix/TigerTix.Web/TigerTix.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nick/Files/Classwork/Y3 S2/Software Engineering/TigerTix/TigerTix.Web/TigerTix.Web.csproj",
+        "projectName": "TigerTix.Web",
+        "projectPath": "/Users/nick/Files/Classwork/Y3 S2/Software Engineering/TigerTix/TigerTix.Web/TigerTix.Web.csproj",
+        "packagesPath": "/Users/nick/.nuget/packages/",
+        "outputPath": "/Users/nick/Files/Classwork/Y3 S2/Software Engineering/TigerTix/TigerTix.Web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nick/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
