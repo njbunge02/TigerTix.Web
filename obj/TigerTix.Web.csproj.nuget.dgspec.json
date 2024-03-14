@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nick/Files/Classwork/Y3 S2/Software Engineering/TigerTix/TigerTix.Web/TigerTix.Web.csproj": {}
+    "/Users/nick/Documents/GitHub/TigerTix.Web/TigerTix.Web.csproj": {}
   },
   "projects": {
-    "/Users/nick/Files/Classwork/Y3 S2/Software Engineering/TigerTix/TigerTix.Web/TigerTix.Web.csproj": {
+    "/Users/nick/Documents/GitHub/TigerTix.Web/TigerTix.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nick/Files/Classwork/Y3 S2/Software Engineering/TigerTix/TigerTix.Web/TigerTix.Web.csproj",
+        "projectUniqueName": "/Users/nick/Documents/GitHub/TigerTix.Web/TigerTix.Web.csproj",
         "projectName": "TigerTix.Web",
-        "projectPath": "/Users/nick/Files/Classwork/Y3 S2/Software Engineering/TigerTix/TigerTix.Web/TigerTix.Web.csproj",
+        "projectPath": "/Users/nick/Documents/GitHub/TigerTix.Web/TigerTix.Web.csproj",
         "packagesPath": "/Users/nick/.nuget/packages/",
-        "outputPath": "/Users/nick/Files/Classwork/Y3 S2/Software Engineering/TigerTix/TigerTix.Web/obj/",
+        "outputPath": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nick/.nuget/NuGet/NuGet.Config"

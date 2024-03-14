@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZZgwYSVfEIwdjWNXKgBFRdG/2GO6rNBWw3wKq9DoEKI=",
+  "Hash": "AJ2UZl6sL2cu+LF9fKfRUtNXhkJVZlHUmHIZ6OqT+Sw=",
   "Source": "TigerTix.Web",
   "BasePath": "_content/TigerTix.Web",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "TigerTix.Web/wwwroot",
       "Source": "TigerTix.Web",
-      "ContentRoot": "/Users/nick/Files/Classwork/Y3 S2/Software Engineering/TigerTix/TigerTix.Web/wwwroot/",
+      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/",
       "BasePath": "_content/TigerTix.Web",
       "Pattern": "**"
     }
