@@ -11,6 +11,8 @@ namespace TigerTix.Web.Controllers
 
         private readonly IUserRepository _userRepository;
 
+        
+
         public AppController(IUserRepository userRepository)
         {
             _userRepository = userRepository;
@@ -18,6 +20,11 @@ namespace TigerTix.Web.Controllers
 
 
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Test()
         {
             return View();
         }
