@@ -18,16 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/nick/Documents/GitHub/TigerTix.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/AddUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0FkZFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/Event.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0V2ZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/ShowUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL1Nob3dVc2Vycy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/Test.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL1Rlc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/nick/Documents/GitHub/TigerTix.Web/Views/_ViewImports.cshtml]

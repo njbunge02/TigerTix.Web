@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="~/TigerTix.Web.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
+    <header style="padding-top: 5px; padding-bottom: 5px;">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="App" asp-action="Index">TigerTix</a>
@@ -20,10 +20,13 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="App" asp-action="Index">Add Users</a>
+                            <a class="nav-link" asp-area="" asp-controller="App" asp-action="AddUser">Add Users</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="App" asp-action="ShowUsers">Show Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="App" asp-action="Event">Create Event</a>
                         </li>
                     </ul>
                 </div>

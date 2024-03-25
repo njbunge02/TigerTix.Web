@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using TigerTix.Web.Data;
 using TigerTix.Web.Models;
 using TigerTix.Web.Data.Entities;
+using System.Runtime.InteropServices;
 
 
 namespace TigerTix.Web.Controllers
@@ -24,7 +25,12 @@ namespace TigerTix.Web.Controllers
             return View();
         }
 
-        public IActionResult Test()
+         public IActionResult AddUser()
+        {
+            return View();
+        }
+
+        public IActionResult Event()
         {
             return View();
         }
@@ -37,6 +43,8 @@ namespace TigerTix.Web.Controllers
             return View();
 
         }
+
+
 
         public IActionResult ShowUsers()
         {

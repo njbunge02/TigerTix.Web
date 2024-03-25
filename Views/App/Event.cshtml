@@ -1,0 +1,25 @@
+@model IndexViewModel
+    @{
+        ViewData["Title"] = "Create Event";
+    }
+<div>
+    <h1>Create an event</h1>
+    <form method="post">
+        <label>Event Name:</label>
+        <br/>
+        <input type="text" name="eventName"/>
+        <br/>
+        <br>
+        <label for="birthday">Birthday:</label>
+        <br/>
+        <input type="date" id="birthday" name="birthday">
+        <br/>
+        <br/>
+        <label>Number of Tickets:</label>
+        <br/>
+        <input type="number" name="quantity" id="quantity" min="0" max="1000000000">
+        <br/><br/>
+        <input type="submit" value="Store Event"/>
+    </form>
+
+</div>
