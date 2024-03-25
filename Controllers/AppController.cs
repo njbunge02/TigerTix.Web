@@ -36,7 +36,7 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(User user)
+        public IActionResult AddUser(User user)
         {
             _userRepository.SaveUser(user);
             _userRepository.SaveAll();
