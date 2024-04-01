@@ -4067,19 +4067,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/nick/.nuget/packages/": {}
+    "/Users/bryanpisciotti/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nick/Documents/GitHub/TigerTix.Web/TigerTix.Web.csproj",
+      "projectUniqueName": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/TigerTix.Web.csproj",
       "projectName": "TigerTix.Web",
-      "projectPath": "/Users/nick/Documents/GitHub/TigerTix.Web/TigerTix.Web.csproj",
-      "packagesPath": "/Users/nick/.nuget/packages/",
-      "outputPath": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/",
+      "projectPath": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/TigerTix.Web.csproj",
+      "packagesPath": "/Users/bryanpisciotti/.nuget/packages/",
+      "outputPath": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/nick/.nuget/NuGet/NuGet.Config"
+        "/Users/bryanpisciotti/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4136,7 +4136,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

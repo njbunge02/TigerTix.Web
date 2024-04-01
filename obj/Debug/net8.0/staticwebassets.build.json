@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RxtGSyqt6eVRewvl8MI8hKU38H7IkeSiXsH56DnNECE=",
+  "Hash": "UgcYDk3oPclR6bVagFr55YJ9JoTL+x9zkQ+YVrjkYwU=",
   "Source": "TigerTix.Web",
   "BasePath": "_content/TigerTix.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TigerTix.Web/wwwroot",
       "Source": "TigerTix.Web",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/",
+      "ContentRoot": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/wwwroot/",
       "BasePath": "_content/TigerTix.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/bundle/TigerTix.Web.styles.css",
+      "Identity": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/obj/Debug/net8.0/scopedcss/bundle/TigerTix.Web.styles.css",
       "SourceId": "TigerTix.Web",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/TigerTix.Web",
       "RelativePath": "TigerTix.Web.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/bundle/TigerTix.Web.styles.css"
+      "OriginalItemSpec": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/obj/Debug/net8.0/scopedcss/bundle/TigerTix.Web.styles.css"
     },
     {
-      "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/projectbundle/TigerTix.Web.bundle.scp.css",
+      "Identity": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/obj/Debug/net8.0/scopedcss/projectbundle/TigerTix.Web.bundle.scp.css",
       "SourceId": "TigerTix.Web",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/TigerTix.Web",
       "RelativePath": "TigerTix.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/projectbundle/TigerTix.Web.bundle.scp.css"
+      "OriginalItemSpec": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/obj/Debug/net8.0/scopedcss/projectbundle/TigerTix.Web.bundle.scp.css"
     },
     {
-      "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/css/bootstrap.min.css",
+      "Identity": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/wwwroot/css/bootstrap.min.css",
       "SourceId": "TigerTix.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/",
+      "ContentRoot": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/wwwroot/",
       "BasePath": "_content/TigerTix.Web",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/css/site.css",
+      "Identity": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/wwwroot/css/site.css",
       "SourceId": "TigerTix.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/",
+      "ContentRoot": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/wwwroot/",
       "BasePath": "_content/TigerTix.Web",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/css/TigerTix.Webstyles.css",
+      "Identity": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/wwwroot/css/TigerTix.Webstyles.css",
       "SourceId": "TigerTix.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/",
+      "ContentRoot": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/wwwroot/",
       "BasePath": "_content/TigerTix.Web",
       "RelativePath": "css/TigerTix.Webstyles.css",
       "AssetKind": "All",
