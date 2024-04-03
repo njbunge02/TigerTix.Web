@@ -1,25 +1,21 @@
 
-@model IndexViewModel
+@model User
     @{
-        ViewData["Title"] = "Add User";
+        ViewData["Title"] = "Tiger Tix Log In";
     }
 <div>
-    <h1>Add a User!</h1>
+    <h1> Log!</h1>
 
     <form method="post">
         <label>Username:</label>
         <br/>
         <input type="text" name="userName"/>
         <br/>
-        <label>Firstname:</label>
+        <label>Password:</label>
         <br/>
-        <input type="text" name="firstName"/>
-        <br/>
-        <label>Lastname:</label>
-        <br/>
-        <input type="text" name="lastName"/>
+        <input type="text" name="passWord"/>
         <br/><br/>
-        <input type="submit" value="Store Name"/>
+        <input type="submit" value="Log in"/>
     </form>
 
 </div>

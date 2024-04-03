@@ -38,9 +38,22 @@ namespace TigerTix.Web.Controllers
         [HttpPost]
         public IActionResult AddUser(User user)
         {
-            _userRepository.SaveUser(user);
-            _userRepository.SaveAll();
-            return View();
+            //_userRepository.SaveUser(user);
+            //_userRepository.SaveAll();
+            //return View();
+
+            // Check username and password
+            if (user.userName== "admin" && user.passWord == "password")
+            {
+                // Authentication successful, redirect to homepage
+                return RedirectToAction("Index", "App");
+            }
+            else
+            {
+                // Authentication failed
+                ModelState.AddModelError("", "Invalid username or password");
+                return View(user);
+            }
 
         }
 

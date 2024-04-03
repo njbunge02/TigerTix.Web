@@ -2,9 +2,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TigerTix.Web.Models
 {
-    public class IndexViewModel
+    public class userModel
     {
         [Required]
         public string userName {get;set;}
+        public string passWord {get; set;}
     }
 }
