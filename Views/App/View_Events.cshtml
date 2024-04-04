@@ -1,0 +1,50 @@
+
+@model IEnumerable<Event>
+    @{
+        ViewData["Title"] = "Events";
+    }
+
+<head>
+<style>
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd; 
+  }
+
+  /* Style for the image */
+  .image-container img {
+    max-height: 600px; 
+    max-width: 600px;
+    margin-right: 20px;
+    border-radius: 5px;
+    margin-left: auto;
+  }
+
+  }
+</style>
+</head>
+
+<h1 style="text-align:center;">Events</h1>
+
+<body>
+
+
+@foreach (var e in Model)
+{
+<div class="image-container">
+<div>
+    <h3>@e.eventName</h3>
+    <p>Description here</p>
+</div>
+    <img src="@e.imageName" alt="image">
+</div>
+
+}
+
+
+</body>
+</html>
