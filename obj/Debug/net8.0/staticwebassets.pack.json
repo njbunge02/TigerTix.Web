@@ -21,10 +21,6 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/images/golf.png",
-      "PackagePath": "staticwebassets/images/golf.png"
-    },
-    {
       "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/spikeball.jpg",
       "PackagePath": "staticwebassets/spikeball.jpg"
     },

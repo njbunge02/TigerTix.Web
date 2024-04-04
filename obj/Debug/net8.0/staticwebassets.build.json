@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qEBWgWdNNirE8FASBgxht4d6LNkLEM1+u1Rr/e5pHoQ=",
+  "Hash": "HEXlnsJl7GRMPtrcemhoCciUkN0yyF2dNXDLJeQJayU=",
   "Source": "TigerTix.Web",
   "BasePath": "_content/TigerTix.Web",
   "Mode": "Default",
@@ -110,25 +110,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/TigerTix.Webstyles.css"
-    },
-    {
-      "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/images/golf.png",
-      "SourceId": "TigerTix.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/",
-      "BasePath": "_content/TigerTix.Web",
-      "RelativePath": "images/golf.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/golf.png"
     },
     {
       "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/Project Rock.png",
