@@ -1,0 +1,64 @@
+
+@model IEnumerable<Event>
+    @{
+        ViewData["Title"] = "Events";
+    }
+
+<head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 10px;
+      border: 1px solid #ddd; 
+    }
+
+    .image-container {
+      grid-column: 2;
+      display: flex;
+      justify-content: flex-end; 
+    align-items: center;
+    }
+
+    .image-container img {
+      max-width: 600px;
+      max-height: 600px;
+      margin-left: auto;
+    }
+
+    .text-container {
+      grid-column: 1;
+      display: flex;
+      flex-direction: column; 
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+@foreach (var e in Model)
+{
+<div class="grid-container">
+  <div class="text-container">
+    <div>
+      <h2 >@e.eventName</h2>
+      <p>Description here</p>
+        <form method="get" action="CheckEvent">
+          <input type="hidden" name="EventName" value="@e.eventName" />
+          <input type="submit" value="Purchase A Ticket!" />
+        </form>
+    </div>
+  </div>
+  <div class="image-container">
+    <img src="@e.imageName" alt="Image">
+  </div>
+</div>
+}
+
+</body>
+</html>
+

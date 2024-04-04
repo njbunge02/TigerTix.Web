@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "Hash": "RxtGSyqt6eVRewvl8MI8hKU38H7IkeSiXsH56DnNECE=",
+=======
+  "Hash": "L07nWMVZQJbJ5El8+MvCjD4yFMDn1lLCORy84OFjCI0=",
+>>>>>>> Stashed changes
   "Source": "TigerTix.Web",
   "BasePath": "_content/TigerTix.Web",
   "Mode": "Default",
@@ -8,19 +12,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "TigerTix.Web/wwwroot",
+      "Name": "TigerTix.Web\\wwwroot",
       "Source": "TigerTix.Web",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/",
+      "ContentRoot": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\",
       "BasePath": "_content/TigerTix.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/bundle/TigerTix.Web.styles.css",
+      "Identity": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TigerTix.Web.styles.css",
       "SourceId": "TigerTix.Web",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TigerTix.Web",
       "RelativePath": "TigerTix.Web.styles.css",
       "AssetKind": "All",
@@ -33,13 +37,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/bundle/TigerTix.Web.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TigerTix.Web.styles.css"
     },
     {
-      "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/projectbundle/TigerTix.Web.bundle.scp.css",
+      "Identity": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TigerTix.Web.bundle.scp.css",
       "SourceId": "TigerTix.Web",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TigerTix.Web",
       "RelativePath": "TigerTix.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +56,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/projectbundle/TigerTix.Web.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TigerTix.Web.bundle.scp.css"
     },
     {
-      "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/css/bootstrap.min.css",
+      "Identity": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "TigerTix.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/",
+      "ContentRoot": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\",
       "BasePath": "_content/TigerTix.Web",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -71,13 +75,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/css/site.css",
+      "Identity": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\css\\site.css",
       "SourceId": "TigerTix.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/",
+      "ContentRoot": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\",
       "BasePath": "_content/TigerTix.Web",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -90,13 +94,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/site.css"
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/css/TigerTix.Webstyles.css",
+      "Identity": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\css\\TigerTix.Webstyles.css",
       "SourceId": "TigerTix.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/",
+      "ContentRoot": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\",
       "BasePath": "_content/TigerTix.Web",
       "RelativePath": "css/TigerTix.Webstyles.css",
       "AssetKind": "All",
@@ -109,7 +113,68 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< Updated upstream
       "OriginalItemSpec": "wwwroot/css/TigerTix.Webstyles.css"
+=======
+      "OriginalItemSpec": "wwwroot\\css\\TigerTix.Webstyles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\neutral.png",
+      "SourceId": "TigerTix.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\",
+      "BasePath": "_content/TigerTix.Web",
+      "RelativePath": "neutral.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\neutral.png"
+    },
+    {
+      "Identity": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\Project Rock.png",
+      "SourceId": "TigerTix.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\",
+      "BasePath": "_content/TigerTix.Web",
+      "RelativePath": "Project Rock.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Project Rock.png"
+    },
+    {
+      "Identity": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\spikeball.jpg",
+      "SourceId": "TigerTix.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\",
+      "BasePath": "_content/TigerTix.Web",
+      "RelativePath": "spikeball.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\spikeball.jpg"
+>>>>>>> Stashed changes
     }
   ]
 }

@@ -32,7 +32,23 @@ namespace TigerTix.Web.Controllers
 
         public IActionResult Event()
         {
+<<<<<<< Updated upstream
             return View();
+=======
+           return View();
+        }
+        public IActionResult View_Events()
+        {
+            var results = from events in _eventRepository.GetAllEvents()
+                                        select events;
+            return View(results.ToList());
+>>>>>>> Stashed changes
+        }
+        [HttpGet]
+        public IActionResult CheckEvent(string EventName)
+        {
+            var result = _eventRepository.GetEventByName(EventName);
+            return View(result);
         }
 
         [HttpPost]
@@ -44,8 +60,26 @@ namespace TigerTix.Web.Controllers
 
         }
 
+<<<<<<< Updated upstream
 
 
+=======
+        [HttpPost]
+        public IActionResult Event(Event eventInput, IFormFile imageFile)
+        {
+            if (imageFile != null)
+            {
+                var fileName = Path.Combine(hostingEnvironment.WebRootPath, Path.GetFileName(imageFile.FileName));
+                imageFile.CopyTo(new FileStream(fileName, FileMode.Create));
+            }
+            eventInput.imageName = "/" + Path.GetFileName(imageFile.FileName);
+
+            _eventRepository.SaveEvent(eventInput);
+            _eventRepository.SaveAll();
+            return View();
+
+        }
+>>>>>>> Stashed changes
         public IActionResult ShowUsers()
         {
             var results = from user in _userRepository.GetAllUsers()
