@@ -41,6 +41,15 @@ namespace TigerTix.Web.Data
             _context.SaveChanges();
        }
 
+       public Event GetEventByName(string name)
+        {
+            var selectedEvent = (from u in _context.Events
+                              where u.eventName == name
+                              select u).FirstOrDefault();
+            
+            return selectedEvent;
+        }
+
        public void DeleteEvent(Event selectedEvent)
        {
             _context.Remove(selectedEvent);
