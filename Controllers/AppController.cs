@@ -117,10 +117,15 @@ namespace TigerTix.Web.Controllers
         /*Provides the site code for the 'Add Event' page, which posts a new
          *  event object to the controller's event repository
          *
+         *@param eventInput...represents the event object being registered
+         *@param imageFile...represents the image of the event being registered
+         *
+         *@return...The Event view
          */
         [HttpPost]
         public IActionResult Event(Event eventInput, IFormFile imageFile)
         {
+            //If an image has been provided, store it in the site's data files
             if (imageFile != null)
             {
                 var fileName = Path.Combine(hostingEnvironment.WebRootPath, Path.GetFileName(imageFile.FileName));
@@ -128,16 +133,25 @@ namespace TigerTix.Web.Controllers
             }
             eventInput.imageName = "/" + Path.GetFileName(imageFile.FileName);
 
+            //Store the event in the controller's event repository and return
+            //  the Event.cshtml view
             _eventRepository.SaveEvent(eventInput);
             _eventRepository.SaveAll();
             return View();
-
         }
 
+        /*Provides the site code for the 'Show Users' page, which provides
+         *  a comprehensive list of all registered users
+         *
+         *@return...The ShowUsers view
+         */
         public IActionResult ShowUsers()
         {
+            //Store all users in a 'results' variable
             var results = from user in _userRepository.GetAllUsers()
                                         select user;
+            //Convert the pool of users to a list and pass it to the
+            //  model of the ShowUsers.cshtml view
             return View(results.ToList());
         }
 
