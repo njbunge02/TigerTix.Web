@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using TigerTix.Web.Data;
-using TigerTix.Web.Models;
 using TigerTix.Web.Data.Entities;
-using System.Runtime.InteropServices;
 
 
 
@@ -44,13 +42,19 @@ namespace TigerTix.Web.Controllers
 
         public IActionResult Event()
         {
-           return View();
+            return View();
         }
         public IActionResult View_Events()
         {
-             var results = from events in _eventRepository.GetAllEvents()
+            var results = from events in _eventRepository.GetAllEvents()
                                         select events;
             return View(results.ToList());
+        }
+        [HttpGet]
+        public IActionResult CheckEvent(string EventName)
+        {
+            var result = _eventRepository.GetEventByName(EventName);
+            return View(result);
         }
 
         [HttpPost]
@@ -77,8 +81,6 @@ namespace TigerTix.Web.Controllers
             return View();
 
         }
-
-
 
         public IActionResult ShowUsers()
         {
