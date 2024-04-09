@@ -269,13 +269,13 @@
 /Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/ref/TigerTix.Web.dll
 /Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/projectbundle/TigerTix.Web.bundle.scp.css
-C:\Users\Minot\Desktop\Github Repos\TigerTix.Web\bin\Debug\net8.0\TigerTix.Web.dll
 C:\Users\Minot\Desktop\Github Repos\TigerTix.Web\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Minot\Desktop\Github Repos\TigerTix.Web\bin\Debug\net8.0\appsettings.json
 C:\Users\Minot\Desktop\Github Repos\TigerTix.Web\bin\Debug\net8.0\TigerTix.Web.staticwebassets.runtime.json
 C:\Users\Minot\Desktop\Github Repos\TigerTix.Web\bin\Debug\net8.0\TigerTix.Web.exe
 C:\Users\Minot\Desktop\Github Repos\TigerTix.Web\bin\Debug\net8.0\TigerTix.Web.deps.json
 C:\Users\Minot\Desktop\Github Repos\TigerTix.Web\bin\Debug\net8.0\TigerTix.Web.runtimeconfig.json
+C:\Users\Minot\Desktop\Github Repos\TigerTix.Web\bin\Debug\net8.0\TigerTix.Web.dll
 C:\Users\Minot\Desktop\Github Repos\TigerTix.Web\bin\Debug\net8.0\TigerTix.Web.pdb
 C:\Users\Minot\Desktop\Github Repos\TigerTix.Web\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Minot\Desktop\Github Repos\TigerTix.Web\bin\Debug\net8.0\Azure.Identity.dll

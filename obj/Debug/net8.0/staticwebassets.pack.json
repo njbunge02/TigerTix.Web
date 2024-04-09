@@ -5,17 +5,12 @@
       "PackagePath": "staticwebassets\\TigerTix.Web.bundle.scp.css"
     },
     {
-<<<<<<< Updated upstream
-      "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/css/TigerTix.Webstyles.css",
-      "PackagePath": "staticwebassets/css/TigerTix.Webstyles.css"
-=======
       "Id": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\Project Rock.png",
       "PackagePath": "staticwebassets\\Project Rock.png"
     },
     {
       "Id": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\css\\TigerTix.Webstyles.css",
       "PackagePath": "staticwebassets\\css\\TigerTix.Webstyles.css"
->>>>>>> Stashed changes
     },
     {
       "Id": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\css\\bootstrap.min.css",
@@ -26,9 +21,6 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-<<<<<<< Updated upstream
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.TigerTix.Web.Microsoft.AspNetCore.StaticWebAssets.props",
-=======
       "Id": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\neutral.png",
       "PackagePath": "staticwebassets\\neutral.png"
     },
@@ -38,7 +30,6 @@
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TigerTix.Web.Microsoft.AspNetCore.StaticWebAssets.props",
->>>>>>> Stashed changes
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
