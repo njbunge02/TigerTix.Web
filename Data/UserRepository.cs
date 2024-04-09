@@ -35,6 +35,11 @@ namespace TigerTix.Web.Data
         return user;
        }
 
+       public User GetUserByUsername(string username)
+        {
+            return _context.Users.FirstOrDefault(u => u.UserName == username);
+        }
+
        public void UpdateUser(User user)
        {
             _context.Users.Add(user);

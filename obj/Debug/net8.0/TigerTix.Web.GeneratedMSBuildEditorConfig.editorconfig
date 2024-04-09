@@ -18,10 +18,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/Views/App/AddUser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0FkZFVzZXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/Views/App/Event.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0V2ZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,8 +26,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/Views/App/ShowUsers.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL1Nob3dVc2Vycy5jc2h0bWw=
+[/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/Views/App/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/Views/App/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL1NpZ25VcC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/Views/_ViewImports.cshtml]

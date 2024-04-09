@@ -7,6 +7,8 @@ namespace TigerTix.Web.Data
         void DeleteUser(User user);
         IEnumerable<User> GetAllUsers();
         User GetUserId(int userID);
+
+        User GetUserByUsername(string username);
         void SaveUser(User user);
         void UpdateUser(User user);
 
