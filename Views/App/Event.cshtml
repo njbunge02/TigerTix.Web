@@ -1,15 +1,21 @@
+@* The event list provided to the controller becomes this view's model *@
 @model IEnumerable<Event>
-    @{
-        ViewData["Title"] = "Create Event";
-    }
+
+@{
+    //Provide the page a title
+    ViewData["Title"] = "Create Event";
+}
+
 <div>
+
     <h1>Create an event</h1>
     <form enctype="multipart/form-data" method="post">
+
+        <!--Takes event information as inputs and uses them to add an Event object to the database-->
         <label>Event Name:</label>
         <br/>
         <input type="text" name="eventName"/>
         <br/>
-<<<<<<< Updated upstream
         <br>
         <label for="date">Event Date:</label>
         <br/>
@@ -22,15 +28,16 @@
         <br/><br/>
         <label>Price per ticket:</label>
         <br/>
-        $<input type="number" name="quantity" id="quantity"step="0.01" placeholder="0.00" min="0" max="10000">
+        <input type="number" name="quantity" id="quantity"step="0.01" placeholder="0.00" min="0" max="10000">
         <br/><br/>
-   
+
+        <!--Stores the provided image and adds it to the site's files-->
         <label for="image">Upload Event Image:</label>
         <br/>
         <input type="file" id="imageFile" name="imageFile">
         <br/><br/><br/>
     
-        
+        <!--Submission-->
         <input type="submit" value="Store Event"/>
     </form>
 
