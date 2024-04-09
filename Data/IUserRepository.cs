@@ -27,12 +27,7 @@ namespace TigerTix.Web.Data
          */
         User GetUserId(int userID);
 
-        /*Saves a user to the database
-         *
-         *@param user...Represents the User object being saved to the database
-         *
-         *@return...None
-         */
+        User GetUserByUsername(string username);
         void SaveUser(User user);
 
         /*Updates the information of a User within the database

@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\TigerTix.Web.csproj": {}
+    "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/TigerTix.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\TigerTix.Web.csproj": {
+    "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/TigerTix.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\TigerTix.Web.csproj",
+        "projectUniqueName": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/TigerTix.Web.csproj",
         "projectName": "TigerTix.Web",
-        "projectPath": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\TigerTix.Web.csproj",
-        "packagesPath": "C:\\Users\\Minot\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\obj\\",
+        "projectPath": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/TigerTix.Web.csproj",
+        "packagesPath": "/Users/bryanpisciotti/.nuget/packages/",
+        "outputPath": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Minot\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/bryanpisciotti/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -72,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

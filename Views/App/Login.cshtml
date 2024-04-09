@@ -1,0 +1,25 @@
+
+@model userModel
+    @{
+        ViewData["Title"] = "Log In";
+    }
+<div>
+
+
+    <form method="post">
+        <label>Username:</label>
+        <br/>
+        <input type="text" name="userName"/>
+        <br/>
+        <label>Password:</label>
+        <br/>
+        <input type="text" name="passWord"/>
+
+         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <br/><br/>
+        <input type="submit" value="Log in"/>
+    </form>
+
+    
+
+</div>

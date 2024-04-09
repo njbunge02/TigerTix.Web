@@ -58,14 +58,13 @@ namespace TigerTix.Web.Data
             return user;
         }
 
-        /*Updates the information of a User within the database
-         *
-         *@param user...Represents the User object being updated in the system
-         *
-         *@return...None
-         */
-        public void UpdateUser(User user)
+       public User GetUserByUsername(string username)
         {
+            return _context.Users.FirstOrDefault(u => u.UserName == username);
+        }
+
+       public void UpdateUser(User user)
+       {
             _context.Users.Add(user);
             _context.SaveChanges();
         }
