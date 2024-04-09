@@ -1,0 +1,25 @@
+
+@model IndexViewModel
+    @{
+        ViewData["Title"] = "Add User";
+    }
+<div>
+    <h1>Add a User!</h1>
+
+    <form method="post">
+        <label>Username:</label>
+        <br/>
+        <input type="text" name="userName"/>
+        <br/>
+        <label>Firstname:</label>
+        <br/>
+        <input type="text" name="firstName"/>
+        <br/>
+        <label>Lastname:</label>
+        <br/>
+        <input type="text" name="lastName"/>
+        <br/><br/>
+        <input type="submit" value="Store Name"/>
+    </form>
+
+</div>

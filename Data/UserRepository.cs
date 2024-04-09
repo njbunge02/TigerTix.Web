@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using TigerTix.Web.Data.Entities;
 using TigerTix.Web.Models;
 
@@ -10,6 +11,13 @@ namespace TigerTix.Web.Data
        public UserRepository(TigerTixContext context)
        {
             _context = context;
+           
+
+          //uncomment to remove all events and users from databases 
+          /*_context.Database.ExecuteSqlRaw("TRUNCATE TABLE Events");
+          _context.Database.ExecuteSqlRaw("TRUNCATE TABLE Users");*/
+           
+
        }
 
        public void SaveUser(User user)

@@ -1,0 +1,36 @@
+@model IEnumerable<Event>
+    @{
+        ViewData["Title"] = "Create Event";
+    }
+<div>
+    <h1>Create an event</h1>
+    <form enctype="multipart/form-data" method="post">
+        <label>Event Name:</label>
+        <br/>
+        <input type="text" name="eventName"/>
+        <br/>
+        <br>
+        <label for="date">Event Date:</label>
+        <br/>
+        <input type="date" id="date" name="date">
+        <br/>
+        <br/>
+        <label>Number of Tickets:</label>
+        <br/>
+        <input type="number" name="quantity" id="quantity" step="1" placeholder="0" min="0" max="1000000000">
+        <br/><br/>
+        <label>Price per ticket:</label>
+        <br/>
+        $<input type="number" name="quantity" id="quantity"step="0.01" placeholder="0.00" min="0" max="10000">
+        <br/><br/>
+   
+        <label for="image">Upload Event Image:</label>
+        <br/>
+        <input type="file" id="imageFile" name="imageFile">
+        <br/><br/><br/>
+    
+        
+        <input type="submit" value="Store Event"/>
+    </form>
+
+</div>

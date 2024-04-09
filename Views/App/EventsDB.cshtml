@@ -1,0 +1,12 @@
+@model IEnumerable<Event>
+
+
+<h1>Events</h1>
+
+<ul>
+@foreach (var e in Model)
+{
+<li>@e.eventName</li>
+}
+
+</ul>

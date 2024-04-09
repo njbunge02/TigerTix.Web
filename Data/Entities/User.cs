@@ -6,5 +6,6 @@ namespace TigerTix.Web.Data.Entities
         public string userName {get;set;}
         public string firstName {get;set;}
         public string lastName {get;set;}
+        
     }
 }

@@ -1,8 +1,28 @@
 {
   "Files": [
     {
-      "Id": "/Users/nick/Files/Classwork/Y3 S2/Software Engineering/TigerTix/TigerTix.Web/wwwroot/index.html",
-      "PackagePath": "staticwebassets/index.html"
+      "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/Debug/net8.0/scopedcss/projectbundle/TigerTix.Web.bundle.scp.css",
+      "PackagePath": "staticwebassets/TigerTix.Web.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/Project Rock.png",
+      "PackagePath": "staticwebassets/Project Rock.png"
+    },
+    {
+      "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/css/TigerTix.Webstyles.css",
+      "PackagePath": "staticwebassets/css/TigerTix.Webstyles.css"
+    },
+    {
+      "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/spikeball.jpg",
+      "PackagePath": "staticwebassets/spikeball.jpg"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.TigerTix.Web.Microsoft.AspNetCore.StaticWebAssets.props",
