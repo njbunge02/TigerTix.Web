@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TigerTix.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2756ea3dc7d9223bd4221fb3047692a22169fcca")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f6cd5089ca6044d06148aacb6c7e65ba6115070")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8bea71d75f83ec60ad2e3e6b74341a7ffd7dfc1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TigerTix.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TigerTix.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

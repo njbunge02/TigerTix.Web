@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TigerTix.Web.Data;
-using TigerTix.Web.Models;
 using TigerTix.Web.Data.Entities;
-using System.Runtime.InteropServices;
+
 
 
 namespace TigerTix.Web.Controllers
@@ -11,12 +10,16 @@ namespace TigerTix.Web.Controllers
     {
 
         private readonly IUserRepository _userRepository;
+        private readonly IEventRepository _eventRepository;
+        private readonly IWebHostEnvironment hostingEnvironment;
 
         
 
-        public AppController(IUserRepository userRepository)
+        public AppController(IUserRepository userRepository, IEventRepository eventRepository, IWebHostEnvironment web)
         {
             _userRepository = userRepository;
+            _eventRepository = eventRepository;
+            hostingEnvironment = web;
         }
 
 
@@ -25,24 +28,27 @@ namespace TigerTix.Web.Controllers
             return View();
         }
 
-         public IActionResult AddUser()
+        public IActionResult AddUser()
         {
             return View();
         }
 
+        public IActionResult EventsDB()
+        {
+            var results = from events in _eventRepository.GetAllEvents()
+                                        select events;
+            return View(results.ToList());
+        }
+
         public IActionResult Event()
         {
-<<<<<<< Updated upstream
             return View();
-=======
-           return View();
         }
         public IActionResult View_Events()
         {
             var results = from events in _eventRepository.GetAllEvents()
                                         select events;
             return View(results.ToList());
->>>>>>> Stashed changes
         }
         [HttpGet]
         public IActionResult CheckEvent(string EventName)
@@ -60,10 +66,6 @@ namespace TigerTix.Web.Controllers
 
         }
 
-<<<<<<< Updated upstream
-
-
-=======
         [HttpPost]
         public IActionResult Event(Event eventInput, IFormFile imageFile)
         {
@@ -79,7 +81,7 @@ namespace TigerTix.Web.Controllers
             return View();
 
         }
->>>>>>> Stashed changes
+
         public IActionResult ShowUsers()
         {
             var results = from user in _userRepository.GetAllUsers()

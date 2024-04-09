@@ -32,7 +32,7 @@ namespace TigerTix.Web.Data
                         where u.Id == eventID
                         select u).FirstOrDefault();
 
-            return selectedEvent;
+        return selectedEvent;
        }
 
        public void UpdateEvent(Event selectedEvent)

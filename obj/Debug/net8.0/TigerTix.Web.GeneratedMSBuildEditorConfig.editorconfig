@@ -26,34 +26,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXENoZWNrRXZlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< Updated upstream
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0luZGV4LmNzaHRtbA==
-=======
 [C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/Event.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXEV2ZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/EventsDB.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXEV2ZW50c0RCLmNzaHRtbA==
->>>>>>> Stashed changes
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< Updated upstream
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-=======
 [C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/ShowUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXFNob3dVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/View_Events.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXFZpZXdfRXZlbnRzLmNzaHRtbA==
->>>>>>> Stashed changes
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/_ViewImports.cshtml]
