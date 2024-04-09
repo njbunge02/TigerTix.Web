@@ -1,11 +1,14 @@
-
 @model IndexViewModel
     @{
+        //Gives this page a title
         ViewData["Title"] = "Add User";
     }
+
 <div>
     <h1>Add a User!</h1>
 
+    <!--Input formt hat creates a User object and pushes
+        if to the database-->
     <form method="post">
         <label>Username:</label>
         <br/>

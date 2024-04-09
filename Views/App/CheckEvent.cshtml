@@ -1,0 +1,126 @@
+@*  Event passed to the controller becomes this view's Model  *@
+@model Event
+
+@{
+    ViewData["Title"] = "Event Info"; //Give the page a title
+    var e = Model; //Create a variable that references the event passed to this view
+}
+
+<head>
+    <!--Formatting within the 'style' tag-->
+    <style>
+        .vertcolumn {
+            display: inline-block;
+            width: 300px;
+            height: 350px;
+            vertical-align: top;
+            background-color: #fdfdfd;
+        }
+
+        #exp_cvv {
+            margin-top: 15px;
+        }
+
+        #TextDescription {
+            margin-right: 10px;
+        }
+
+        #TicketInfo {
+        }
+
+        #num {
+            width: 200px;
+        }
+
+        #expmo {
+            width: 55px;
+        }
+
+        #expyr {
+            width: 50px;
+        }
+
+        .sittogether {
+            display: inline-block;
+        }
+
+        .vertsect {
+            display: inline-block;
+        }
+
+        #cvv {
+            width: 40px;
+        }
+
+        #cvvbox {
+            margin-left: 22px;
+        }
+
+        #cardsubmission {
+            margin-left: 30px;
+        }
+    </style>
+
+    <title>testpage</title>
+</head>
+
+<body>
+    <div class="fullcontainer">
+
+        <!--Rightmost column, stores further event information than is in
+            the previous 'search' page. Currently title and description-->
+        <div class="vertcolumn" id="TextDescription">
+            <h3>@e.eventName</h3>
+            <br />
+            <br />
+            <p>Event Description</p>
+        </div>
+
+        <!--Leftmost column, for taking payment information inputs from the user-->
+        <div class="vertcolumn" id="TicketInfo">
+
+            <!--Card information input-->
+            <form method="post" action="StorePay">
+                <div class="horzsect" id="numbox">
+                    <label class="sittogether">Number:</label>
+                    <input class="sittogether" type="text" id="num" name="cardNumber" pattern="[0-9]{16}" />
+                </div>
+                <div class="horzsect" id="exp_cvv">
+                    <div class="vertsect" id="exp">
+                        <label>Expiry</label>
+                        <select id="expmo" class="sittogether" name="cardExpiryMo">
+                            <option value="00">MM</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <p class="sittogether">/</p>
+                        <input type="text" id="expyr" class="sittogether" name="cardExpiryYr" placeholder="YYYY" pattern="[0-9]{4}" />
+                    </div>
+                    <div class="vertsect" id="cvvbox">
+                        <label>CVV</label>
+                        <input type="text" id="cvv" name="cardCVV" placeholder="XXX" />
+                    </div>
+                </div>
+
+                <!--Submission and 'remember me' buttons go here-->
+                <div class="horzsect" id="buttonContainer">
+                    <label>Remember me</label>
+                    <input type="checkbox" class="sittogether" id="memory" name="save" />
+                    <input type="submit" class="sittogether" id="cardsubmission" name="submitCard" />
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</body>
