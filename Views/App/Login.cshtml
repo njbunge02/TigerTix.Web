@@ -3,10 +3,40 @@
     @{
         ViewData["Title"] = "Log In";
     }
-<div>
+
+<style>
+.centered-container {
+	display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.login-box {
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 5px;
+    padding: 50px; 
+    background-color: rgb(251, 251, 251);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px; 
+    width: 100%;
+}
+
+.submit-button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 82, 145);
+    padding: 8px 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer; 
+}
+
+</style>
+
+<div class="centered-container" style="margin-top:25px"><h1>Login</h1></div>
 
 
-    <form method="post">
+<div class="centered-container">
+    <form method="post" class="login-box">
         <label>Username:</label>
         <br/>
         <input type="text" name="userName"/>
@@ -17,7 +47,7 @@
 
          @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <br/><br/>
-        <input type="submit" value="Log in"/>
+        <div style="text-align:center;"> <input class="submit-button" type="submit" value="Log in"/> </div>
     </form>
 
     

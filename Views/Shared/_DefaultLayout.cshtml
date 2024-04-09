@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="~/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TigerTix.Web.styles.css" asp-append-version="true" />
+    
+    <style>
+    .div-footer{
+         position: fixed;
+            bottom: 30px;
+            width: 100%;
+          
+    }
+</style>
 </head>
 <body>
     <header style="padding-top: 5px; padding-bottom: 5px;">
@@ -16,7 +25,7 @@
             <div class="container-fluid">
 
 
-                <a>TigerTix</a>
+                <a class="navbar-brand">TigerTix</a>
     
             </div>
         </nav>
@@ -27,11 +36,13 @@
         </main>
     </div>
 
+    <div class="div-footer">
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - TigerTix - <a asp-area="" asp-controller="App" asp-action="Index">Privacy</a>
         </div>
     </footer>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
