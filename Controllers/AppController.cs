@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using TigerTix.Web.Data;
 using TigerTix.Web.Data.Entities;
+using TigerTix.Web.Models;
 using System;
 using System.Runtime.InteropServices;
-using Azure.Identity;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -83,6 +83,11 @@ namespace TigerTix.Web.Controllers
             //Convert the results into a list and pass it to the model of the
             //  View_Events.cshtml view
             return View(results.ToList());
+        }
+
+        public IActionResult Login()
+        {
+            return View();
         }
 
         /*Provides the site code for the 'Event Info' page, which takes payment info

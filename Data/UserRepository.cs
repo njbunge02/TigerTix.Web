@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using TigerTix.Web.Data.Entities;
 using TigerTix.Web.Models;
 
+
 namespace TigerTix.Web.Data
 {
     public class UserRepository: IUserRepository

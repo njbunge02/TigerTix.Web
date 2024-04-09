@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/TigerTix.Web.csproj": {}
+    "/Users/nick/Documents/GitHub/TigerTix.Web/TigerTix.Web.csproj": {}
   },
   "projects": {
-    "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/TigerTix.Web.csproj": {
+    "/Users/nick/Documents/GitHub/TigerTix.Web/TigerTix.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/TigerTix.Web.csproj",
+        "projectUniqueName": "/Users/nick/Documents/GitHub/TigerTix.Web/TigerTix.Web.csproj",
         "projectName": "TigerTix.Web",
-        "projectPath": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/TigerTix.Web.csproj",
-        "packagesPath": "/Users/bryanpisciotti/.nuget/packages/",
-        "outputPath": "/Users/bryanpisciotti/Documents/cpsc2150/TigerTix.Web/obj/",
+        "projectPath": "/Users/nick/Documents/GitHub/TigerTix.Web/TigerTix.Web.csproj",
+        "packagesPath": "/Users/nick/.nuget/packages/",
+        "outputPath": "/Users/nick/Documents/GitHub/TigerTix.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/bryanpisciotti/.nuget/NuGet/NuGet.Config"
+          "/Users/nick/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -43,6 +43,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -71,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
