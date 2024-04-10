@@ -30,6 +30,15 @@
     cursor: pointer; 
 }
 
+.sign-up-button {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+}
+
 </style>
 
 <div class="centered-container" style="margin-top:25px"><h1>Login</h1></div>
@@ -47,8 +56,17 @@
 
          @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <br/><br/>
-        <div style="text-align:center;"> <input class="submit-button" type="submit" value="Log in"/> </div>
+        <div style="text-align:center;"> <input class="submit-button" type="submit" value="Log in"/>
+        <button class="sign-up-button" onclick="redirectToSignUp()">Sign Up</button>
+        </div>
     </form>
 
     
 </div>
+
+<script>
+    // JavaScript function to redirect to sign-up HTML page
+    function redirectToSignUp() {
+        window.location.href = "SignUp.cshtml";
+    }
+</script>
