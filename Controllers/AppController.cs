@@ -90,6 +90,11 @@ namespace TigerTix.Web.Controllers
             return View();
         }
 
+        public IActionResult Signup()
+        {
+            return View();
+        }
+
         /*Provides the site code for the 'Event Info' page, which takes payment info
          *  and purchases a ticket for the user
          *
@@ -122,7 +127,7 @@ namespace TigerTix.Web.Controllers
             //return View();
 
             if (ModelState.IsValid)
-    {
+        {
         // Retrieve user from database based on username
         var existingUser = _userRepository.GetUserByUsername(user.userName);
 
@@ -156,6 +161,8 @@ namespace TigerTix.Web.Controllers
             return View(user);
 
         }
+
+  
 
         /*Provides the site code for the 'Add Event' page, which posts a new
          *  event object to the controller's event repository
