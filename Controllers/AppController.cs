@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using TigerTix.Web.Data;
 using TigerTix.Web.Data.Entities;
-using System;
-using System.Runtime.InteropServices;
-using Azure.Identity;
+using TigerTix.Web.Models;
+//using System;
+//using System.Runtime.InteropServices;
+//using Azure.Identity;
 using System.Security.Cryptography;
-using System.Text;
+//using System.Text;
 
 
 namespace TigerTix.Web.Controllers
@@ -37,7 +38,56 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The Index view
          */
-        public IActionResult Index() { return View(); }
+        public IActionResult Index() {
+            return View();
+        }
+
+        /*Provides a list of all registered events with information, keeps track
+         *  of the user that has logged in successfully
+         *  
+         *@param userID...Represents the unique ID of the user that has
+         *                successfully signed in
+         *
+         *@return...The 'View_Events' view
+         */
+        [HttpGet]
+        public IActionResult View_Events(int userID)
+        {
+			//Create a 'results' variable, and append each event in the controller's
+			//  event repository to it
+			var results = from events in _eventRepository.GetAllEvents()
+						  select events;
+
+			//Convert the results into a list and pass it to the model of the
+			//  View_Events.cshtml view
+			return View(results.ToList());
+		}
+
+        /*Provides the site code for the default 'Index' page, deployed
+         *  for users who are not signed in. Contains buttons for login,
+         *  signup, and view events
+         *  
+         *@param value...Represents the value of the button pressed by the user
+         *
+         *@return...The view that corresponds to the button that the user pressed
+         */
+        [HttpGet]
+        public IActionResult Index(string value)
+        {
+            if (value == "Login")
+            {
+                return RedirectToAction("Login");
+            }
+            else if (value == "Signup")
+            {
+                return RedirectToAction("Signup");
+            }
+            else if (value == "ViewEvents")
+            {
+                return RedirectToAction("View_Events");
+            }
+            return View();
+        }
 
         /*Provides the site code for the 'Add a User' page for displaying and
          *  taking user input
@@ -92,15 +142,32 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The CheckEvent view
          */
-        [HttpGet]
-        public IActionResult CheckEvent(string EventName)
+        /*public IActionResult CheckEvent(string EventName)
         {
             //Search the controller's event repository for an event with a
             //  matching name to the one passed in, store it and pass it to
             //  the model of the CheckEvent.cshtml view
             var result = _eventRepository.GetEventByName(EventName);
             return View(result);
+        }*/
+        public IActionResult CheckEvent(EventSignModel eventSignData)
+        {
+            if (eventSignData.signedIn)
+            {
+                return View(eventSignData);
+            }
+            else
+            {
+                return RedirectToAction("Login");
+            }
         }
+
+        /*Provides the site code for the login page when there is no information
+         *  input yet.
+         *  
+         *@return...The Login view
+         */
+        public IActionResult Login() { return View(); }
 
         /*Provides the site code for the 'Add Users' page, which takes account
          *  information and creates a new User object for the site user
@@ -112,41 +179,38 @@ namespace TigerTix.Web.Controllers
         [HttpPost]
         public IActionResult Login(userModel user)
         {
-            //_userRepository.SaveUser(user);
-            //_userRepository.SaveAll();
-            //return View();
 
             if (ModelState.IsValid)
-    {
-        // Retrieve user from database based on username
-        var existingUser = _userRepository.GetUserByUsername(user.userName);
-
-        if (existingUser != null)
-        {
-            // Validate password
-            if (ValidatePassword(user.passWord, existingUser.PasswordHash, Convert.FromBase64String(existingUser.Salt)))
             {
-                // Authentication successful, redirect to homepage
-                return RedirectToAction("Index", "App");
+                // Retrieve user from database based on username
+                var existingUser = _userRepository.GetUserByUsername(user.userName);
+                
+                if (existingUser != null)
+                {
+                    // Validate password
+                    if (ValidatePassword(user.passWord, existingUser.PasswordHash, Convert.FromBase64String(existingUser.Salt)))
+                    {
+                        // Authentication successful, redirect to events page
+                        return RedirectToAction("View_Events", "App", new { userID = existingUser.Id });
+                    }
+                    else
+                    {
+                        // Password incorrect
+                        ModelState.AddModelError("", "Invalid username or password");
+                    }
+                }
+                else
+                {
+                    // User not found
+                    ModelState.AddModelError("", "Account does not exist");
+                }
             }
             else
             {
-                // Password incorrect
+                // ModelState is invalid, meaning there are validation errors
+                // This block is executed if the provided username or password doesn't meet the validation requirements
                 ModelState.AddModelError("", "Invalid username or password");
             }
-        }
-        else
-        {
-            // User not found
-            ModelState.AddModelError("", "Account does not exist");
-        }
-    }
-    else
-    {
-        // ModelState is invalid, meaning there are validation errors
-        // This block is executed if the provided username or password doesn't meet the validation requirements
-        ModelState.AddModelError("", "Invalid username or password");
-    }
 
             return View(user);
 
@@ -214,7 +278,7 @@ namespace TigerTix.Web.Controllers
             return View(model);
         }
 
-    // Method to generate a random salt
+        // Method to generate a random salt
         private byte[] GenerateSalt()
         {
             byte[] salt = new byte[32];

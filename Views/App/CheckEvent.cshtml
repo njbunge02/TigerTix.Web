@@ -1,9 +1,13 @@
 @*  Event passed to the controller becomes this view's Model  *@
-@model Event
+@*@model Event*@
+@model EventSignModel
 
 @{
-    ViewData["Title"] = "Event Info"; //Give the page a title
-    var e = Model; //Create a variable that references the event passed to this view
+    ViewData["Title"] = "Event Info";
+    //Give the page a title
+    //var e = Model; //Create a variable that references the event passed to this view
+    var e = Model.currEvent;
+    var u = Model.currUser;
 }
 
 <head>
@@ -81,6 +85,7 @@
 
             <!--Card information input-->
             <form method="post" action="StorePay">
+                <input type="hidden" id="currUser" value="@u" />
                 <div class="horzsect" id="numbox">
                     <label class="sittogether">Number:</label>
                     <input class="sittogether" type="text" id="num" name="cardNumber" pattern="[0-9]{16}" />

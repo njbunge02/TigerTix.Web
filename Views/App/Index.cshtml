@@ -1,8 +1,62 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
 
-@model User
-    @{
-        ViewData["Title"] = "Home Page";
-    }
+<head>
+	<style>
+
+		.center-container {
+			width: 200px;
+			height: 100px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+		}
+
+		.redirect {
+			margin-bottom: 10px;
+			color: rgb(255, 255, 255);
+			background-color: rgb(0, 82, 145);
+			padding: 8px 30px;
+			border-radius: 20px;
+			border: none;
+			cursor: pointer;
+			width: 150px;
+			margin-left: 25px;
+		}
+
+		.redirect:hover {
+			margin-bottom: 10px;
+			color: rgb(215, 215, 215);
+			background-color: rgb(30, 112, 175);
+			padding: 8px 30px;
+			border-radius: 20px;
+			border: none;
+			cursor: pointer;
+			width: 150px;
+			margin-left: 25px;
+		}
+	</style>
+</head>
+
 <div>
-   <h1 style="text-align:center;">Welcome to Tiger Tix</h1>
+	<h1 style="text-align:center;">Welcome to Tiger Tix!</h1>
+
+	<div class="center-container">
+		<form method="get" action="App/Index" class="redirect-container" id="login-redirect">
+			<input type="hidden" name="value" value="Login" />
+			<input type="submit" class="redirect" value="Log in" />
+		</form>
+
+		<form method="get" action="App/Index" class="redirect-container" id="signup-redirect">
+			<input type="hidden" name="value" value="Signup" />
+			<input type="submit" class="redirect" value="Sign up" />
+		</form>
+
+		<form method="get" action="App/Index" class="redirect-container" id="eventslist-redirect">
+			<input type="hidden" name="value" value="ViewEvents" />
+			<input type="submit" class="redirect" value="See Events" />
+		</form>
+	</div>
+
 </div>
