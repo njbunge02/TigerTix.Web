@@ -2,10 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 using TigerTix.Web.Data;
 using TigerTix.Web.Data.Entities;
 using TigerTix.Web.Models;
-using System;
-using System.Runtime.InteropServices;
+//using System;
+//using System.Runtime.InteropServices;
 using System.Security.Cryptography;
-using System.Text;
+//using System.Text;
 
 
 namespace TigerTix.Web.Controllers
@@ -37,7 +37,17 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The Index view
          */
+        [Route("")]
+        [Route("Home")]
         public IActionResult Index() { return View(); }
+
+        /*Provides the site code for the 'Index' default page after the user
+         * has signed in
+         *
+         *@return...The Index_Auth view
+         */
+        [Route("Home/{userID}")]
+        public IActionResult Index_Auth(int userID) { return View(userID);  }
 
         /*Provides the site code for the 'Add a User' page for displaying and
          *  taking user input
@@ -74,6 +84,7 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The View_Events view
          */
+        [Route("ViewEvents")]
         public IActionResult View_Events()
         {
             //Create a 'results' variable, and append each event in the controller's
@@ -85,6 +96,18 @@ namespace TigerTix.Web.Controllers
             return View(results.ToList());
         }
 
+        [Route("ViewEvents/{userID}")]
+        public IActionResult View_Events_Auth(int userID)
+        {
+
+            var results = from events in _eventRepository.GetAllEvents()
+                          select events;
+            var userEventPair = new KeyValuePair<int, IEnumerable<Event>>( userID, results.ToList() );
+
+            return View(userEventPair);
+        }
+
+        [Route("Login")]
         public IActionResult Login()
         {
             return View();
@@ -114,44 +137,44 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The AddUser view
          */
+        [Route("Login")]
         [HttpPost]
         public IActionResult Login(userModel user)
         {
-            //_userRepository.SaveUser(user);
-            //_userRepository.SaveAll();
-            //return View();
 
             if (ModelState.IsValid)
-    {
-        // Retrieve user from database based on username
-        var existingUser = _userRepository.GetUserByUsername(user.userName);
-
-        if (existingUser != null)
-        {
-            // Validate password
-            if (ValidatePassword(user.passWord, existingUser.PasswordHash, Convert.FromBase64String(existingUser.Salt)))
             {
-                // Authentication successful, redirect to homepage
-                return RedirectToAction("Index", "App");
+                // Retrieve user from database based on username
+                var existingUser = _userRepository.GetUserByUsername(user.userName);
+
+                if (existingUser != null)
+                {
+                    // Validate password
+                    if (ValidatePassword(user.passWord, existingUser.PasswordHash, Convert.FromBase64String(existingUser.Salt)))
+                    {
+                        // Authentication successful, redirect to homepage
+                        var authUser = _userRepository.GetUserByUsername(user.userName);
+                        //return RedirectToAction("Index_Auth", new {userID = authUser.Id});
+                        return RedirectToAction("View_Events_Auth", new { userID = authUser.Id });
+                    }
+                    else
+                    {
+                        // Password incorrect
+                        ModelState.AddModelError("", "Invalid username or password");
+                    }
+                }
+                else
+                {
+                    // User not found
+                    ModelState.AddModelError("", "Account does not exist");
+                }
             }
             else
             {
-                // Password incorrect
+                // ModelState is invalid, meaning there are validation errors
+                // This block is executed if the provided username or password doesn't meet the validation requirements
                 ModelState.AddModelError("", "Invalid username or password");
             }
-        }
-        else
-        {
-            // User not found
-            ModelState.AddModelError("", "Account does not exist");
-        }
-    }
-    else
-    {
-        // ModelState is invalid, meaning there are validation errors
-        // This block is executed if the provided username or password doesn't meet the validation requirements
-        ModelState.AddModelError("", "Invalid username or password");
-    }
 
             return View(user);
 
