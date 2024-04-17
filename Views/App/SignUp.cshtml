@@ -3,11 +3,44 @@
     ViewData["Title"] = "Sign Up";
 }
 
+
 <div>
     <h1>Sign Up</h1>
 
 
     <form method="post">
+          <div>
+            <label>First Name:</label>
+            <br/>
+            @Html.TextBoxFor(model => model.firstName)
+            <br/>
+            @Html.ValidationMessageFor(model => model.firstName, "", new { @class = "text-danger" })
+        </div>
+
+        <div>
+            <label>Last Name:</label>
+            <br/>
+            @Html.TextBoxFor(model => model.lastName)
+            <br/>
+            @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "text-danger" })
+        </div>
+        <br/><br/>
+         <div>
+            <input type="radio" id="user" name="account_type" value="user" checked>
+            <label for="savings">Customer</label><br>
+
+            <input type="radio" id="student" name="account_type" value="student">
+            <label for="savings">Student</label><br>
+
+            <input type="radio" id="employee" name="account_type" value="employee">
+            <label for="current">Clemson Employee</label><br>
+
+            <input type="radio" id="organizer" name="account_type" value="organizer">
+            <br/>
+            <label for="current">Event Organizer</label><br>
+            
+        </div>
+        <br/><br/>
         <div>
             <label>Username:</label>
             <br/>

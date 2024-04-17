@@ -8,6 +8,15 @@ namespace TigerTix.Web.Data.Entities
         [Key]
         public int Id { get; set; }
 
+         [Required]
+       public string firstName { get; set; }
+        
+        [Required]
+       public string lastName { get; set;}
+
+        [Required]
+       public string account_type { get; set; }
+
         [Required]
         public string UserName { get; set; }
 
