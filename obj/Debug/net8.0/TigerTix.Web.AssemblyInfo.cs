@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TigerTix.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa7bebf7bf422a80ab457fdec164c9884504e45b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf57543a9b9a3aa2013be0d37962ba603ef61425")]
 [assembly: System.Reflection.AssemblyProductAttribute("TigerTix.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TigerTix.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
