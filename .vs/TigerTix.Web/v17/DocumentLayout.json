@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\controllers\\appcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:controllers\\appcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\views\\app\\checkevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:views\\app\\checkevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\views\\app\\view_events_auth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:views\\app\\view_events_auth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\views\\app\\view_events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:views\\app\\view_events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\views\\app\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:views\\app\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\controllers\\appcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:controllers\\appcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\views\\app\\index_auth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:views\\app\\index_auth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\views\\app\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:views\\app\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,20 +38,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AppController.cs",
               "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Controllers\\AppController.cs",
               "RelativeDocumentMoniker": "Controllers\\AppController.cs",
               "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Controllers\\AppController.cs",
               "RelativeToolTip": "Controllers\\AppController.cs",
-              "ViewState": "AQIAAFYAAAAA//////8rwJ0AAABBAAAA",
+              "ViewState": "AQIAAG4AAACAYWZmZmYGwHoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T19:49:56.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -67,78 +59,51 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAABgAAAAANDMzMzMLwCkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T19:49:01.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T19:49:01.377Z"
             }
           ]
         },
         {
           "DockedWidth": 195,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index_Auth.cshtml",
-              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\Index_Auth.cshtml",
-              "RelativeDocumentMoniker": "Views\\App\\Index_Auth.cshtml",
-              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\Index_Auth.cshtml",
-              "RelativeToolTip": "Views\\App\\Index_Auth.cshtml",
-              "ViewState": "AQIAADMAAACAZmZmZmYkwD4AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-16T20:07:24.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\App\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\Login.cshtml",
-              "RelativeToolTip": "Views\\App\\Login.cshtml",
-              "ViewState": "AQIAABQAAAAAAAAAAAAUwDIAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-16T20:19:58.006Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "View_Events.cshtml",
               "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\View_Events.cshtml",
               "RelativeDocumentMoniker": "Views\\App\\View_Events.cshtml",
               "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\View_Events.cshtml",
               "RelativeToolTip": "Views\\App\\View_Events.cshtml",
-              "ViewState": "AQIAACwAAAAAAAAAAAAcwEoAAAAAAAAA",
+              "ViewState": "AQIAACgAAAAIMzMzMzMrwDgAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-16T23:19:28.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "View_Events_Auth.cshtml",
               "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\View_Events_Auth.cshtml",
               "RelativeDocumentMoniker": "Views\\App\\View_Events_Auth.cshtml",
               "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\View_Events_Auth.cshtml",
               "RelativeToolTip": "Views\\App\\View_Events_Auth.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAD0AAAA7AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-16T23:20:16.844Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\App\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\Index.cshtml",
-              "RelativeToolTip": "Views\\App\\Index.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAD0AAAAKAAAA",
+              "DocumentIndex": 1,
+              "Title": "CheckEvent.cshtml",
+              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\CheckEvent.cshtml",
+              "RelativeDocumentMoniker": "Views\\App\\CheckEvent.cshtml",
+              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\CheckEvent.cshtml",
+              "RelativeToolTip": "Views\\App\\CheckEvent.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-16T20:05:32.986Z",
+              "WhenOpened": "2024-04-17T13:14:39.469Z",
               "EditorCaption": ""
             }
           ]

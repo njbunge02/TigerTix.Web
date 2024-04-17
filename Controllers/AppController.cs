@@ -38,7 +38,6 @@ namespace TigerTix.Web.Controllers
          *@return...The Index view
          */
         [Route("")]
-        [Route("Home")]
         public IActionResult Index() { return View(); }
 
         /*Provides the site code for the 'Index' default page after the user
@@ -46,7 +45,7 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The Index_Auth view
          */
-        [Route("Home/{userID}")]
+        [Route("Home")]
         public IActionResult Index_Auth(int userID) { return View(userID);  }
 
         /*Provides the site code for the 'Add a User' page for displaying and
@@ -96,7 +95,7 @@ namespace TigerTix.Web.Controllers
             return View(results.ToList());
         }
 
-        [Route("ViewEvents/{userID}")]
+        [Route("ViewEvents/Auth")]
         public IActionResult View_Events_Auth(int userID)
         {
 
@@ -121,13 +120,19 @@ namespace TigerTix.Web.Controllers
          *@return...The CheckEvent view
          */
         [HttpGet]
-        public IActionResult CheckEvent(string EventName)
+        [Route("ViewEvents/CheckEvent")]
+
+        public IActionResult CheckEvent(string EventName, int userID)
         {
             //Search the controller's event repository for an event with a
             //  matching name to the one passed in, store it and pass it to
             //  the model of the CheckEvent.cshtml view
+            var user = _userRepository.GetUserId(userID);
             var result = _eventRepository.GetEventByName(EventName);
-            return View(result);
+
+            var userEventPair = new KeyValuePair<User, Event>(user, result);
+
+            return View(userEventPair);
         }
 
         /*Provides the site code for the 'Add Users' page, which takes account
@@ -137,8 +142,8 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The AddUser view
          */
-        [Route("Login")]
         [HttpPost]
+        [Route("Login")]
         public IActionResult Login(userModel user)
         {
 
@@ -155,7 +160,7 @@ namespace TigerTix.Web.Controllers
                         // Authentication successful, redirect to homepage
                         var authUser = _userRepository.GetUserByUsername(user.userName);
                         //return RedirectToAction("Index_Auth", new {userID = authUser.Id});
-                        return RedirectToAction("View_Events_Auth", new { userID = authUser.Id });
+                        return RedirectToAction("Index_Auth", new { userID = authUser.Id });
                     }
                     else
                     {
@@ -189,6 +194,7 @@ namespace TigerTix.Web.Controllers
          *@return...The Event view
          */
         [HttpPost]
+        [Route("CreateEvent")]
         public IActionResult Event(Event eventInput, IFormFile imageFile)
         {
             //If an image has been provided, store it in the site's data files
@@ -207,6 +213,7 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpGet]
+        [Route("Signup")]
         public IActionResult SignUp()
         {
             var model = new userModel(); // Create a new instance of the model
@@ -214,6 +221,7 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpPost]
+        [Route("Signup")]
         public IActionResult SignUp(userModel model)
         {
             // Validate user input
