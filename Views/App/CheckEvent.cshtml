@@ -1,10 +1,12 @@
 @*  Event passed to the controller becomes this view's Model  *@
-@model Event
+@model KeyValuePair<User, Event>
 
 @{
     Layout = "_Layout";
     ViewData["Title"] = "Event Info"; //Give the page a title
-    var e = Model; //Create a variable that references the event passed to this view
+
+    var u = Model.Key;
+    var e = Model.Value; //Create a variable that references the event passed to this view
 }
 
 

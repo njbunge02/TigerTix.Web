@@ -37,7 +37,16 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The Index view
          */
+        [Route("")]
         public IActionResult Index() { return View(); }
+
+        /*Provides the site code for the 'Index' default page after the user
+         * has signed in
+         *
+         *@return...The Index_Auth view
+         */
+        [Route("Home")]
+        public IActionResult Index_Auth(int userID) { return View(userID);  }
 
         /*Provides the site code for the 'Add a User' page for displaying and
          *  taking user input
@@ -74,6 +83,7 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The View_Events view
          */
+        [Route("ViewEvents")]
         public IActionResult View_Events()
         {
             //Create a 'results' variable, and append each event in the controller's
@@ -85,6 +95,18 @@ namespace TigerTix.Web.Controllers
             return View(results.ToList());
         }
 
+        [Route("ViewEvents/Auth")]
+        public IActionResult View_Events_Auth(int userID)
+        {
+
+            var results = from events in _eventRepository.GetAllEvents()
+                          select events;
+            var userEventPair = new KeyValuePair<int, IEnumerable<Event>>( userID, results.ToList() );
+
+            return View(userEventPair);
+        }
+
+        [Route("Login")]
         public IActionResult Login()
         {
             return View();
@@ -103,13 +125,19 @@ namespace TigerTix.Web.Controllers
          *@return...The CheckEvent view
          */
         [HttpGet]
-        public IActionResult CheckEvent(string EventName)
+        [Route("ViewEvents/CheckEvent")]
+
+        public IActionResult CheckEvent(string EventName, int userID)
         {
             //Search the controller's event repository for an event with a
             //  matching name to the one passed in, store it and pass it to
             //  the model of the CheckEvent.cshtml view
+            var user = _userRepository.GetUserId(userID);
             var result = _eventRepository.GetEventByName(EventName);
-            return View(result);
+
+            var userEventPair = new KeyValuePair<User, Event>(user, result);
+
+            return View(userEventPair);
         }
 
         /*Provides the site code for the 'Add Users' page, which takes account
@@ -120,43 +148,43 @@ namespace TigerTix.Web.Controllers
          *@return...The AddUser view
          */
         [HttpPost]
+        [Route("Login")]
         public IActionResult Login(userModel user)
         {
-            //_userRepository.SaveUser(user);
-            //_userRepository.SaveAll();
-            //return View();
 
             if (ModelState.IsValid)
         {
         // Retrieve user from database based on username
         var existingUser = _userRepository.GetUserByUsername(user.userName);
 
-        if (existingUser != null)
-        {
-            // Validate password
-            if (ValidatePassword(user.passWord, existingUser.PasswordHash, Convert.FromBase64String(existingUser.Salt)))
-            {
-                // Authentication successful, redirect to homepage
-                return RedirectToAction("Index", "App");
+                if (existingUser != null)
+                {
+                    // Validate password
+                    if (ValidatePassword(user.passWord, existingUser.PasswordHash, Convert.FromBase64String(existingUser.Salt)))
+                    {
+                        // Authentication successful, redirect to homepage
+                        var authUser = _userRepository.GetUserByUsername(user.userName);
+                        //return RedirectToAction("Index_Auth", new {userID = authUser.Id});
+                        return RedirectToAction("Index_Auth", new { userID = authUser.Id });
+                    }
+                    else
+                    {
+                        // Password incorrect
+                        ModelState.AddModelError("", "Invalid username or password");
+                    }
+                }
+                else
+                {
+                    // User not found
+                    ModelState.AddModelError("", "Account does not exist");
+                }
             }
             else
             {
-                // Password incorrect
+                // ModelState is invalid, meaning there are validation errors
+                // This block is executed if the provided username or password doesn't meet the validation requirements
                 ModelState.AddModelError("", "Invalid username or password");
             }
-        }
-        else
-        {
-            // User not found
-            ModelState.AddModelError("", "Account does not exist");
-        }
-    }
-    else
-    {
-        // ModelState is invalid, meaning there are validation errors
-        // This block is executed if the provided username or password doesn't meet the validation requirements
-        ModelState.AddModelError("", "Invalid username or password");
-    }
 
             return View(user);
 
@@ -173,6 +201,7 @@ namespace TigerTix.Web.Controllers
          *@return...The Event view
          */
         [HttpPost]
+        [Route("CreateEvent")]
         public IActionResult Event(Event eventInput, IFormFile imageFile)
         {
             //If an image has been provided, store it in the site's data files
@@ -191,6 +220,7 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpGet]
+        [Route("Signup")]
         public IActionResult SignUp()
         {
             var model = new userModel(); // Create a new instance of the model
@@ -198,6 +228,7 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpPost]
+        [Route("Signup")]
         public IActionResult SignUp(userModel model)
         {
             // Validate user input
