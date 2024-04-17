@@ -10,14 +10,24 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TigerTix.Web.styles.css" asp-append-version="true" />
 
-<style>
-    .div-footer{
-         position: fixed;
+    <style>
+        .div-footer {
+            position: fixed;
             bottom: 30px;
             width: 100%;
-          
-    }
-</style>
+        }
+        /* Adjusting nav item alignment */
+        .navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end; /* Move items to the end of the navbar */
+        }
+
+        /* To prevent the "Sign Out" link from wrapping */
+        .navbar-nav .nav-item:last-child {
+            margin-left: auto; /* Pushes this item to the very right */
+        }
+    </style>
 
 </head>
 <body>
