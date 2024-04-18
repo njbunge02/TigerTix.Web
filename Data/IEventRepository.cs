@@ -20,7 +20,7 @@ namespace TigerTix.Web.Data
          *
          *@param eventID...represents the unique ID of the event being accessed
          *
-         *@return...The Eveng object being searched for
+         *@return...The Event object being searched for
          */
         Event GetEventId(int eventID);
 

@@ -250,7 +250,7 @@ namespace TigerTix.Web.Controllers
             return View(model);
         }
 
-    // Method to generate a random salt
+        // Method to generate a random salt
         private byte[] GenerateSalt()
         {
             byte[] salt = new byte[32];
@@ -273,10 +273,10 @@ namespace TigerTix.Web.Controllers
 
         // Method to validate password
         private bool ValidatePassword(string inputPassword, string hashedPassword, byte[] salt)
-{
-        string hashedInputPassword = HashPassword(inputPassword, salt);
-        return hashedPassword == hashedInputPassword;
-}   
+        {
+                string hashedInputPassword = HashPassword(inputPassword, salt);
+                return hashedPassword == hashedInputPassword;
+        }   
 
 
     }

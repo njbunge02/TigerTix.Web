@@ -1,19 +1,111 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\entities\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\entities\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\purchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\purchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\ipurchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\ipurchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 209,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 206,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\Entities\\Ticket.cs",
+              "RelativeDocumentMoniker": "Data\\Entities\\Ticket.cs",
+              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\Entities\\Ticket.cs",
+              "RelativeToolTip": "Data\\Entities\\Ticket.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:42:25.01Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\EventRepository.cs",
+              "RelativeDocumentMoniker": "Data\\EventRepository.cs",
+              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\EventRepository.cs",
+              "RelativeToolTip": "Data\\EventRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:42:54.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IEventRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\IEventRepository.cs",
+              "RelativeDocumentMoniker": "Data\\IEventRepository.cs",
+              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\IEventRepository.cs",
+              "RelativeToolTip": "Data\\IEventRepository.cs",
+              "ViewState": "AQIAABsAAACAZmZmZmYiwDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:42:53.072Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 212,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PurchaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\PurchaseRepository.cs",
+              "RelativeDocumentMoniker": "Data\\PurchaseRepository.cs",
+              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\PurchaseRepository.cs",
+              "RelativeToolTip": "Data\\PurchaseRepository.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAiwB0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:42:49.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPurchaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\IPurchaseRepository.cs",
+              "RelativeDocumentMoniker": "Data\\IPurchaseRepository.cs",
+              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\IPurchaseRepository.cs",
+              "RelativeToolTip": "Data\\IPurchaseRepository.cs",
+              "ViewState": "AQIAABMAAAAAzczMzMwuwCsAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:42:47.894Z",
+              "EditorCaption": ""
             }
           ]
         }
