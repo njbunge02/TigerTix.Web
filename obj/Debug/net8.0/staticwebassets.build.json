@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L07nWMVZQJbJ5El8+MvCjD4yFMDn1lLCORy84OFjCI0=",
+  "Hash": "e4uzMxZ4ba6pHTMYzt50drHmawS/wesOmLiaN3+gFgk=",
   "Source": "TigerTix.Web",
   "BasePath": "_content/TigerTix.Web",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\TigerTix.Webstyles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\Future_Folk_Cover.jpg",
+      "SourceId": "TigerTix.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\",
+      "BasePath": "_content/TigerTix.Web",
+      "RelativePath": "Future_Folk_Cover.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Future_Folk_Cover.jpg"
     },
     {
       "Identity": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\wwwroot\\neutral.png",

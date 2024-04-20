@@ -5,24 +5,8 @@ namespace TigerTix.Web.Data.Entities
 {
     public class Ticket
     {
-
         [Required]
         public int Id { get; set; }
-
-        [Required]
-        public string NameOnCard { get; set; }
-
-        [Required]
-        public int CardNumber { get; set; }
-
-        [Required]
-        public int ExpiryMo { get; set; }
-
-        [Required]
-        public int ExpiryYr { get; set; }
-
-        [Required]
-        public int CVV { get; set; }
 
         [Required]
         public int TicketHolder { get; set; }
@@ -31,11 +15,19 @@ namespace TigerTix.Web.Data.Entities
         public double TicketPrice { get; set; }
 
         [Required]
-        public int PurchaseID { get; set; }
+        public int eventID;
+
+        public string FormatPrice() { return TicketPrice.ToString("##########.00"); }
     }
 
     public class Purchase
     {
+        public Purchase() { PurchaseList = new List<Ticket>(); }
+
+
+        [Required]
+        public int eventID { get; set; }
+
         [Required]
         public int Id { get; set; }
 
@@ -46,14 +38,15 @@ namespace TigerTix.Web.Data.Entities
         public IEnumerable<Ticket> PurchaseList { get; set; }
 
         [Required]
+        public double subtotal { get; set; }
+
+        [Required]
         public double DiscountApplied { get; set; }
 
         [Required]
         public double TotalCost { get; set; }
 
-        public void addTicket(Ticket ticket)
-        {
-            this.PurchaseList.Append(ticket);
-        }
+        [Required]
+        public int cardNum { get; set; }
     }
 }

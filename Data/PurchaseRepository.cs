@@ -31,13 +31,28 @@ namespace TigerTix.Web.Data
             return purchaseList.ToList();
         }
 
-        /*Provides a purchase object that is retrieved by its unique ID
+		/*Provides a list of purchases made by the user
+         * 
+         *@param userID...Represents the unique ID of the user that made the purchase
+         *
+         *@return...A List containing every purchase made by the user matching the
+         * provided userID
+         */
+		public IEnumerable<Purchase> GetPurchaseHistory(int userID)
+        {
+            var purchaseList = from p in _context.Purchases
+                               where p.TicketHolder == userID
+                               select p;
+            return purchaseList.ToList();
+        }
+
+		/*Provides a purchase object that is retrieved by its unique ID
          * 
          *@param PurchaseID...represents the unique ID of the purchase being accessed
          *
          *@return...The Purchase ovject being searched for
          */
-        public Purchase GetPurchaseByID(int PurchaseID)
+		public Purchase GetPurchaseByID(int PurchaseID)
         {
             //Iterate through all purchases in the dtabase, and if the ID
             //  matches, return it

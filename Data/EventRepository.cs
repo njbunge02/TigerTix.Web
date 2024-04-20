@@ -3,7 +3,7 @@ using TigerTix.Web.Models;
 
 namespace TigerTix.Web.Data
 {
-    public class EventRepository: IEventRepository
+    public class EventRepository : IEventRepository
     {
         private readonly TigerTixContext _context;
         public EventRepository(TigerTixContext context) { _context = context; }

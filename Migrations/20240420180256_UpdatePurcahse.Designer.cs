@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TigerTix.Web.Data;
 
@@ -11,9 +12,11 @@ using TigerTix.Web.Data;
 namespace TigerTix.Web.Migrations
 {
     [DbContext(typeof(TigerTixContext))]
-    partial class TigerTixContextModelSnapshot : ModelSnapshot
+    [Migration("20240420180256_UpdatePurcahse")]
+    partial class UpdatePurcahse
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
