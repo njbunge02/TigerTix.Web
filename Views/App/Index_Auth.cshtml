@@ -1,6 +1,9 @@
+@model int
 @{
-	ViewData["Title"] = "Home Page";
-	Layout = "_Layout";
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+
+	var ID = Model;
 }
 
 <style>
@@ -57,16 +60,19 @@
 	<div class="sitCenter" id="button_holder">
 		<div id="form_holder">
 
-			<form class="redirect" id="see_events" action="ViewEvents">
-				<input type="submit" class="submit-button" value="See Events" />
-			</form>
-			
-			<form class="redirect" id="log_in" action="Login">
-				<input type="submit" class="submit-button" value="Log in" />
+			<form class="redirect" id="see_events" action="ViewEvents/Auth">
+				<input type="hidden" name="userID" value="@ID" />
+				<input class="submit-button" type="submit" value="See Events" />
 			</form>
 
-			<form class="redirect" id="sign_up" action="Signup">
-				<input type="submit" class="submit-button" value="Sign up" />
+			<form class="redirect" id="view_account" action="ViewAccount">
+				<input type="hidden" name="userID" value="@ID" />
+				<input class="submit-button" type="submit" value="My Account" />
+			</form>
+
+			<form class="redirect" id="signout" action="Signout">
+				<input type="hidden" name="userID" value="@ID" />
+				<input class="submit-button" type="submit" value="Sign Out" />
 			</form>
 
 		</div>

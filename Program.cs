@@ -32,10 +32,11 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-
+/*
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=App}/{action=Login}/{id?}");
-    
+*/
+app.MapControllers();
 
 app.Run();

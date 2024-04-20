@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/Index_Auth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0luZGV4X0F1dGguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0xvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/View_Events.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL1ZpZXdfRXZlbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/View_Events_Auth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL1ZpZXdfRXZlbnRzX0F1dGguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/nick/Documents/GitHub/TigerTix.Web/Views/Shared/_DefaultLayout.cshtml]
