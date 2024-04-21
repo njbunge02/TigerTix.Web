@@ -19,7 +19,6 @@ namespace TigerTix.Web.Controllers
         private readonly IUserRepository _userRepository;
         private readonly IEventRepository _eventRepository;
         private readonly IPurchaseRepository _purchaseRepository;
-        //private readonly ITicketRepository _ticketRepository;
 
         /*Constructor for the App Controller
          *
@@ -30,7 +29,6 @@ namespace TigerTix.Web.Controllers
         public AppController(IUserRepository userRepository,
                              IEventRepository eventRepository,
                              IPurchaseRepository purchaseRepository,
-                             //ITicketRepository ticketRepository,
                              IWebHostEnvironment web)
         {
             //Populate the private fields

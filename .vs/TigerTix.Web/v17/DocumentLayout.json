@@ -3,44 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\purchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\purchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\discountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\discountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\entities\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\entities\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\models\\purchasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:models\\purchasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\idiscountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\idiscountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\views\\app\\checkevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:views\\app\\checkevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\entities\\discount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\entities\\discount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\views\\app\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:views\\app\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\tigertixcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\tigertixcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\controllers\\appcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:controllers\\appcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\views\\app\\view_events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:views\\app\\view_events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\views\\app\\event.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:views\\app\\event.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\entities\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\entities\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\data\\tigertixcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:data\\tigertixcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|c:\\users\\minot\\desktop\\github repos\\tigertix.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC03359-72F3-4262-A098-06136CC9C0AE}|TigerTix.Web.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,121 +37,63 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 196,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 206,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\EventRepository.cs",
+              "RelativeDocumentMoniker": "Data\\EventRepository.cs",
+              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\EventRepository.cs",
+              "RelativeToolTip": "Data\\EventRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowCQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:07:45.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DiscountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\DiscountRepository.cs",
+              "RelativeDocumentMoniker": "Data\\DiscountRepository.cs",
+              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\DiscountRepository.cs",
+              "RelativeToolTip": "Data\\DiscountRepository.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAmwFUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T15:05:07.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IDiscountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\IDiscountRepository.cs",
+              "RelativeDocumentMoniker": "Data\\IDiscountRepository.cs",
+              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\IDiscountRepository.cs",
+              "RelativeToolTip": "Data\\IDiscountRepository.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBcAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T15:03:20.291Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Event.cs",
-              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\Entities\\Event.cs",
-              "RelativeDocumentMoniker": "Data\\Entities\\Event.cs",
-              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\Entities\\Event.cs",
-              "RelativeToolTip": "Data\\Entities\\Event.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T23:00:49.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CheckEvent.cshtml",
-              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\CheckEvent.cshtml",
-              "RelativeDocumentMoniker": "Views\\App\\CheckEvent.cshtml",
-              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\CheckEvent.cshtml",
-              "RelativeToolTip": "Views\\App\\CheckEvent.cshtml",
-              "ViewState": "AQIAAHUAAAAAMzMzMzMbwHQAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-19T20:50:54.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\Entities\\Ticket.cs",
-              "RelativeDocumentMoniker": "Data\\Entities\\Ticket.cs",
-              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\Entities\\Ticket.cs",
-              "RelativeToolTip": "Data\\Entities\\Ticket.cs",
-              "ViewState": "AQIAABMAAAAANDMzMzMDwCcAAAASAAAA",
+              "Title": "Discount.cs",
+              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\Entities\\Discount.cs",
+              "RelativeDocumentMoniker": "Data\\Entities\\Discount.cs",
+              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\Entities\\Discount.cs",
+              "RelativeToolTip": "Data\\Entities\\Discount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T22:15:38.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Checkout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\Checkout.cshtml",
-              "RelativeDocumentMoniker": "Views\\App\\Checkout.cshtml",
-              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\Checkout.cshtml",
-              "RelativeToolTip": "Views\\App\\Checkout.cshtml",
-              "ViewState": "AQIAAFoAAABAZmZmZmYkwGoAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-20T00:39:01.575Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 216,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PurchaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\PurchaseRepository.cs",
-              "RelativeDocumentMoniker": "Data\\PurchaseRepository.cs",
-              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\PurchaseRepository.cs",
-              "RelativeToolTip": "Data\\PurchaseRepository.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowC0AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T18:21:09.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Event.cshtml",
-              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\Event.cshtml",
-              "RelativeDocumentMoniker": "Views\\App\\Event.cshtml",
-              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\Event.cshtml",
-              "RelativeToolTip": "Views\\App\\Event.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACAAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-20T16:39:49.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TigerTixContext.cs",
-              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\TigerTixContext.cs",
-              "RelativeDocumentMoniker": "Data\\TigerTixContext.cs",
-              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\TigerTixContext.cs",
-              "RelativeToolTip": "Data\\TigerTixContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T02:20:07.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "View_Events.cshtml",
-              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\View_Events.cshtml",
-              "RelativeDocumentMoniker": "Views\\App\\View_Events.cshtml",
-              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\App\\View_Events.cshtml",
-              "RelativeToolTip": "Views\\App\\View_Events.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADoAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-20T00:57:18.795Z",
+              "WhenOpened": "2024-04-21T15:00:25.221Z",
               "EditorCaption": ""
             },
             {
@@ -174,22 +104,35 @@
               "RelativeDocumentMoniker": "Controllers\\AppController.cs",
               "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Controllers\\AppController.cs",
               "RelativeToolTip": "Controllers\\AppController.cs",
-              "ViewState": "AQIAAKcAAAAAMDMzMzMLwL4AAAAqAAAA",
+              "ViewState": "AQIAAAwAAACAZmZmZmYkwB4AAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T22:03:48.88Z",
+              "WhenOpened": "2024-04-21T14:59:09.359Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PurchaseModel.cs",
-              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Models\\PurchaseModel.cs",
-              "RelativeDocumentMoniker": "Models\\PurchaseModel.cs",
-              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Models\\PurchaseModel.cs",
-              "RelativeToolTip": "Models\\PurchaseModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
+              "DocumentIndex": 4,
+              "Title": "TigerTixContext.cs",
+              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\TigerTixContext.cs",
+              "RelativeDocumentMoniker": "Data\\TigerTixContext.cs",
+              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Data\\TigerTixContext.cs",
+              "RelativeToolTip": "Data\\TigerTixContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T22:14:58.828Z",
+              "WhenOpened": "2024-04-21T14:58:57.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Minot\\Desktop\\Github Repos\\TigerTix.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAE8AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T18:58:44.048Z",
               "EditorCaption": ""
             }
           ]
