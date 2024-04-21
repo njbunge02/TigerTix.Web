@@ -35,7 +35,6 @@ namespace TigerTix.Web.Controllers
             _userRepository = userRepository;
             _eventRepository = eventRepository;
             _purchaseRepository = purchaseRepository;
-            //_ticketRepository = ticketRepository;
             hostingEnvironment = web;
         }
 
