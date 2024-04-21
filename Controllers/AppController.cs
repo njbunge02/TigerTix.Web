@@ -19,6 +19,7 @@ namespace TigerTix.Web.Controllers
         private readonly IUserRepository _userRepository;
         private readonly IEventRepository _eventRepository;
 
+
         /*Constructor for the App Controller
          *
          *@param userRepository...Represents a pool of User objects for storage, accessing, and altering
@@ -37,8 +38,21 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The Index view
          */
-        [Route("")]
-        public IActionResult Index() { return View(); }
+        public IActionResult Index() { 
+            
+            var signedInUser = Request.Cookies["SignedInUser"];
+        if (string.IsNullOrEmpty(signedInUser))
+        {
+        // Handle case where signedInUser is not set
+        return RedirectToAction("Login", "App"); // Redirect to login page or handle appropriately
+        
+        }
+           User results = _userRepository.GetUserByUsername(signedInUser);
+                      
+            //Convert the group of all events to a list and pass it to the
+            //  model in the EventsDB view
+            return View(results);
+            }
 
         /*Provides the site code for the 'Index' default page after the user
          * has signed in
@@ -54,6 +68,12 @@ namespace TigerTix.Web.Controllers
          *@return...The AddUser view
          */
         public IActionResult AddUser() { return View(); }
+
+        public IActionResult SignOut()
+        {
+            Response.Cookies.Delete("SignedInUser");
+            return RedirectToAction("Login", "App");
+        }
 
         /*Provides the site code for the 'See Created Events' page, which displays
          *  a comprehensive list of all user-created events
@@ -117,6 +137,22 @@ namespace TigerTix.Web.Controllers
             return View();
         }
 
+        public IActionResult Profile()
+        {
+        var signedInUser = Request.Cookies["SignedInUser"];
+        if (string.IsNullOrEmpty(signedInUser))
+        {
+        // Handle case where signedInUser is not set
+        return RedirectToAction("Login", "App"); // Redirect to login page or handle appropriately
+        
+        }
+           User results = _userRepository.GetUserByUsername(signedInUser);
+                      
+            //Convert the group of all events to a list and pass it to the
+            //  model in the EventsDB view
+            return View(results);
+        }
+
         /*Provides the site code for the 'Event Info' page, which takes payment info
          *  and purchases a ticket for the user
          *
@@ -152,32 +188,21 @@ namespace TigerTix.Web.Controllers
         public IActionResult Login(userModel user)
         {
 
-            if (ModelState.IsValid)
+       
+            if (true/*ModelState.IsValid*/)
         {
         // Retrieve user from database based on username
         var existingUser = _userRepository.GetUserByUsername(user.userName);
 
-                if (existingUser != null)
-                {
-                    // Validate password
-                    if (ValidatePassword(user.passWord, existingUser.PasswordHash, Convert.FromBase64String(existingUser.Salt)))
-                    {
-                        // Authentication successful, redirect to homepage
-                        var authUser = _userRepository.GetUserByUsername(user.userName);
-                        //return RedirectToAction("Index_Auth", new {userID = authUser.Id});
-                        return RedirectToAction("Index_Auth", new { userID = authUser.Id });
-                    }
-                    else
-                    {
-                        // Password incorrect
-                        ModelState.AddModelError("", "Invalid username or password");
-                    }
-                }
-                else
-                {
-                    // User not found
-                    ModelState.AddModelError("", "Account does not exist");
-                }
+        if (existingUser != null)
+        {
+            // Validate password
+            if (ValidatePassword(user.passWord, existingUser.PasswordHash, Convert.FromBase64String(existingUser.Salt)))
+            {
+                // Authentication successful, redirect to homepage
+                string signedInUser = existingUser.UserName;
+                Response.Cookies.Append("SignedInUser", signedInUser);
+                return RedirectToAction("Index", "App");
             }
             else
             {
@@ -185,6 +210,19 @@ namespace TigerTix.Web.Controllers
                 // This block is executed if the provided username or password doesn't meet the validation requirements
                 ModelState.AddModelError("", "Invalid username or password");
             }
+        }
+        else
+        {
+            // User not found
+            ModelState.AddModelError("", "Account does not exist");
+        }
+    }
+    else
+    {
+        // ModelState is invalid, meaning there are validation errors
+        // This block is executed if the provided username or password doesn't meet the validation requirements
+        ModelState.AddModelError("", "Invalid username or password.");
+    }
 
             return View(user);
 
@@ -244,7 +282,11 @@ namespace TigerTix.Web.Controllers
                 var newUser = new User {
                     UserName = model.userName,
                     PasswordHash = hashedPassword,
-                    Salt = Convert.ToBase64String(salt)
+                    Salt = Convert.ToBase64String(salt),
+                    firstName = model.firstName,
+                    lastName = model.lastName,
+                    account_type = model.account_type
+
                 };
 
                 _userRepository.SaveUser(newUser);
