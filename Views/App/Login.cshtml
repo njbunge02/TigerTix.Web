@@ -1,22 +1,23 @@
+
 @model userModel
-@{
-    ViewData["Title"] = "Log In";
-}
+    @{
+        ViewData["Title"] = "Log In";
+    }
 
 <style>
 .centered-container {
-    display: flex;
+	display: flex;
     justify-content: center;
     margin-top: 100px;
-    }
+}
 
 .login-box {
     border: 1px solid rgb(49, 49, 49);
     border-radius: 5px;
-    padding: 50px;
+    padding: 50px; 
     background-color: rgb(251, 251, 251);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
+    max-width: 400px; 
     width: 100%;
 }
 
@@ -41,24 +42,32 @@
 
 </style>
 
-
 <div class="centered-container" style="margin-top:25px"><h1>Login</h1></div>
 
 
 <div class="centered-container">
     <form method="post" asp-controller="App" asp-action="Login" class="login-box">
         <label>Username:</label>
-        <br />
-        <input type="text" name="userName" />
-        <br />
+        <br/>
+        <input type="text" name="userName"/>
+        <br/>
         <label>Password:</label>
-        <br />
-        <input type="text" name="passWord" />
+        <br/>
+        <input type="text" name="passWord"/>
 
-         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <br/><br/>
-        <div style="text-align:center;"> <input class="submit-button" type="submit" value="Log in"/> </div>
+        <div style="text-align:center;"> 
+        <input class="submit-button" type="submit" value="Log in"/> 
+        </div>
+        
     </form>
-
-    
 </div>
+<br/><br/>
+<form method=post asp-controller="App" asp-action="Signup">
+<div style="text-align:center;">
+<label>Dont have a account?</label>
+<input class="login-button" type="submit" value="Sign up"/>
+</div>
+</form>
+
