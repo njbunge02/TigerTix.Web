@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/Project Rock.png"
     },
     {
+      "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/Rock Climbing.jpeg",
+      "PackagePath": "staticwebassets/Rock Climbing.jpeg"
+    },
+    {
       "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/css/TigerTix.Webstyles.css",
       "PackagePath": "staticwebassets/css/TigerTix.Webstyles.css"
     },

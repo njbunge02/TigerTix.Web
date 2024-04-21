@@ -25,20 +25,23 @@
             @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "text-danger" })
         </div>
         <br/><br/>
+
          <div>
-            <input type="radio" id="user" name="account_type" value="user" checked>
-            <label for="savings">Customer</label><br>
-
-            <input type="radio" id="student" name="account_type" value="student">
-            <label for="savings">Student</label><br>
-
-            <input type="radio" id="employee" name="account_type" value="employee">
-            <label for="current">Clemson Employee</label><br>
-
-            <input type="radio" id="organizer" name="account_type" value="organizer">
-            <br/>
-            <label for="current">Event Organizer</label><br>
+        
+            @Html.RadioButtonFor(model => model.account_type, "Customer", new { id = "Customer" })
+            <label>Customer</label><br>
             
+
+            @Html.RadioButtonFor(model => model.account_type, "Student", new { id = "Student" })
+            <label>Student</label><br>
+
+            @Html.RadioButtonFor(model => model.account_type, "Employee", new { id = "Employee" })
+            <label>Clemson Employee</label><br>
+
+            @Html.RadioButtonFor(model => model.account_type, "Organizer", new { id = "Organizer" })
+            <label>Event Organizer</label><br>
+      
+            @Html.ValidationMessageFor(model => model.account_type, "", new { @class = "text-danger" })
         </div>
         <br/><br/>
         <div>

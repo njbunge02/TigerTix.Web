@@ -6,13 +6,13 @@ namespace TigerTix.Web.Models
     public class userModel
     {
         [Required(ErrorMessage = "First name is required")]
-       public string firstName { get; set; }
+       public string? firstName { get; set; }
         
         [Required(ErrorMessage = "Last name is required")]
-       public string lastName { get; set;}
+       public string? lastName { get; set;}
 
          [Required(ErrorMessage = "Account type is required")]
-       public string account_type { get; set; }
+       public string? account_type { get; set; }
        
         [Required(ErrorMessage = "Username is required")]
         public string userName {get;set;}

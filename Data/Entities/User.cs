@@ -25,9 +25,6 @@ namespace TigerTix.Web.Data.Entities
 
         [Required]
         public string Salt { get; set; }
-
-        
-
         
     }
 }

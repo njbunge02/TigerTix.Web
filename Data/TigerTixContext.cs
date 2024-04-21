@@ -12,6 +12,13 @@ namespace TigerTix.Web.Data
         {
   
             _config = config;
+        
+        //Deletes All tables
+        /*
+            Users.RemoveRange(Users);
+            Events.RemoveRange(Events);
+            SaveChanges();
+        */
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
