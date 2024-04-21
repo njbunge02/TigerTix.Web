@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/TigerTix.Web.bundle.scp.css"
     },
     {
+      "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/Future_Folk_Cover.jpg",
+      "PackagePath": "staticwebassets/Future_Folk_Cover.jpg"
+    },
+    {
       "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/Project Rock.png",
       "PackagePath": "staticwebassets/Project Rock.png"
     },

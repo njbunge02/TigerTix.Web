@@ -63,7 +63,7 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The Index_Auth view
          */
-        [Route("Home")]
+      
         public IActionResult Index_Auth(int userID) { return View(userID);  }
 
         /*Provides the site code for the 'Add a User' page for displaying and
@@ -100,7 +100,7 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The Event view
          */
-        [Route("CreateEvent")]
+   
         public IActionResult Event() { return View(); }
 
         /*Provides the site code for the 'See Events' page, which displays a
@@ -119,7 +119,7 @@ namespace TigerTix.Web.Controllers
             return View(results.ToList());
         }
 
-        [Route("ViewEvents/Auth")]
+    
         public IActionResult View_Events_Auth(int userID)
         {
 
@@ -130,7 +130,7 @@ namespace TigerTix.Web.Controllers
             return View(userEventPair);
         }
 
-        [Route("Login")]
+    
         public IActionResult Login()
         {
             return View();
@@ -167,7 +167,7 @@ namespace TigerTix.Web.Controllers
         [HttpGet]
      
 
-        [Route("ViewEvents/CheckEvent")]
+  
 
         public IActionResult CheckEvent(string EventName, int userID)
         {
@@ -182,7 +182,7 @@ namespace TigerTix.Web.Controllers
             return View(userEventPair);
         }
 
-        [Route("ViewEvents/Checkout")]
+     
         /*Provides the site code for the 'Checkout' page, which takes information
          *  from the previous 'CheckEvent' tab and stores it as a payment
          *  
@@ -223,7 +223,7 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpPost]
-        [Route("ViewEvents/Checkout")]
+      
         public IActionResult Checkout(int user, Purchase purchase)
         {
             _purchaseRepository.SavePurchase(purchase);
@@ -240,7 +240,7 @@ namespace TigerTix.Web.Controllers
          *@return...The AddUser view
          */
         [HttpPost]
-        [Route("Login")]
+     
         public IActionResult Login(userModel user)
         {
 
@@ -293,7 +293,7 @@ namespace TigerTix.Web.Controllers
          *@return...The Event view
          */
         [HttpPost]
-        [Route("CreateEvent")]
+    
         public IActionResult Event(Event eventInput, IFormFile imageFile)
         {
             //If an image has been provided, store it in the site's data files
@@ -312,7 +312,7 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpGet]
-        [Route("Signup")]
+     
         public IActionResult SignUp()
         {
             var model = new userModel(); // Create a new instance of the model
@@ -320,7 +320,7 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpPost]
-        [Route("Signup")]
+     
         public IActionResult SignUp(userModel model)
         {
             // Validate user input
