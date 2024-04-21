@@ -9,67 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TigerTix.Web
 build_property.RootNamespace = TigerTix.Web
-build_property.ProjectDir = /Users/nick/Documents/GitHub/TigerTix.Web/
+build_property.ProjectDir = C:\Users\Minot\Desktop\Github Repos\TigerTix.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/nick/Documents/GitHub/TigerTix.Web
+build_property.MSBuildProjectDirectory = C:\Users\Minot\Desktop\Github Repos\TigerTix.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/CheckEvent.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0NoZWNrRXZlbnQuY3NodG1s
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/CheckEvent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXENoZWNrRXZlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/Event.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0V2ZW50LmNzaHRtbA==
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXENoZWNrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/EventsDB.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0V2ZW50c0RCLmNzaHRtbA==
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/Event.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXEV2ZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0luZGV4LmNzaHRtbA==
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/EventsDB.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXEV2ZW50c0RCLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/Index_Auth.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0luZGV4X0F1dGguY3NodG1s
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL0xvZ2luLmNzaHRtbA==
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/Index_Auth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXEluZGV4X0F1dGguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/Profile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL1Byb2ZpbGUuY3NodG1s
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/SignUp.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL1NpZ25VcC5jc2h0bWw=
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/View_Events.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL1ZpZXdfRXZlbnRzLmNzaHRtbA==
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXFNpZ25VcC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/App/View_Events_Auth.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwL1ZpZXdfRXZlbnRzX0F1dGguY3NodG1s
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/View_Events.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXFZpZXdfRXZlbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/Shared/_DefaultLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19EZWZhdWx0TGF5b3V0LmNzaHRtbA==
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/App/View_Events_Auth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXFZpZXdfRXZlbnRzX0F1dGguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/Shared/_DefaultLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EZWZhdWx0TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nick/Documents/GitHub/TigerTix.Web/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-byvefnxt67
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Minot/Desktop/Github Repos/TigerTix.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0h1vgivsb8

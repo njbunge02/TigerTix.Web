@@ -3,7 +3,7 @@ using TigerTix.Web.Models;
 
 namespace TigerTix.Web.Data
 {
-    public class EventRepository: IEventRepository
+    public class EventRepository : IEventRepository
     {
         private readonly TigerTixContext _context;
         public EventRepository(TigerTixContext context) { _context = context; }
@@ -34,7 +34,7 @@ namespace TigerTix.Web.Data
          *
          *@param eventID...represents the unique ID of the event being accessed
          *
-         *@return...The Eveng object being searched for
+         *@return...The Event object being searched for
          */
         public Event GetEventId(int eventID)
         {

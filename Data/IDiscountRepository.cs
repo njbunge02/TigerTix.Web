@@ -2,19 +2,26 @@ using TigerTix.Web.Data.Entities;
 
 namespace TigerTix.Web.Data
 {
-    public interface IEventRepository
+    public interface IDiscountRepository
     {
         /*Saves an event to the context database
          *
          *@param selectedEvent...Represents the Event object being added to the database
          */
-        void SaveEvent(Event selectedEvent);
+        void SaveDiscount(Discount selectedDiscount);
         
         /*Provides all previously registered events on the site
          *
          *@return...A list containing every event in the database
          */
-        IEnumerable<Event> GetAllEvents();
+        IEnumerable<Discount> GetAllDiscounts();
+
+        /*Provides all registerd discounts on the site that are applicable
+         * to a specific type of user
+         * 
+         *@return...A List containing every discount applicable to a given user
+         */
+        IEnumerable<Discount> GetApplicable(string userType);
 
         /*Provides an Event object that is found by it's unique ID
          *
@@ -22,7 +29,7 @@ namespace TigerTix.Web.Data
          *
          *@return...The Event object being searched for
          */
-        Event GetEventId(int eventID);
+        Discount GetDiscountId(int discountID);
 
         /*Updates an event in the database
          *
@@ -30,7 +37,7 @@ namespace TigerTix.Web.Data
          *
          @return...None
          */
-        void UpdateEvent(Event selectedEvent);
+        void UpdateDiscount(Discount selectedDiscount);
 
         /*Provides an Event object that is found by it's name, if there are
          *  several events that share a name, the first one in the database
@@ -40,7 +47,7 @@ namespace TigerTix.Web.Data
          *
          *@return...The Event object being searched for
          */
-        Event GetEventByName(string name);
+        Discount GetDiscountByName(string name);
 
         /*Removes an event from the database
          *
@@ -48,7 +55,7 @@ namespace TigerTix.Web.Data
          *
          *@return...None
          */
-        void DeleteEvent(Event selectedEvent);
+        void DeleteDiscount(Discount selectedDiscount);
 
         /*Saves all changes made to the database
          *

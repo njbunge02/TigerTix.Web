@@ -1,0 +1,115 @@
+﻿@model PurchaseModel;
+
+@{
+	var t_list = Model.Cart;
+	var u = Model.Holder;
+	var e = Model.currentEvent;
+
+	var subtotal = 0.0;
+	foreach (var t in t_list) {
+		subtotal += t.TicketPrice;
+	}
+	var t_subtotal = subtotal.ToString("##########.00");
+	var t_total = subtotal.ToString("##########.00");
+
+	var finalized_purchase = Model.MakePurchase;
+
+	ViewData["Title"] = "Checkout";
+}
+
+<head>
+	<style>
+
+		#bigcontainer {
+			margin-top: 75px;
+			background-color: #ffffffff;
+			width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			display: block;
+			padding: 20px;
+			border: 1px solid #000000ff;
+			border-radius: 5px;
+		}
+
+		.vertsect {
+			background-color: #ffffffff;
+			display: flex;
+		}
+
+		#header-text {
+			margin-bottom: 25px;
+		}
+
+		#username {
+			padding-left: 15px;
+		}
+
+		.datalist {
+			background-color: #0000ffff;
+		}
+
+		#totaldata {
+			display: block;
+			padding-left: 40px;
+		}
+
+		#subtotal {
+			margin-bottom: -30px;
+		}
+
+		#total {
+			display: block;
+		}
+
+		#goback {
+			margin-left: 100px;
+		}
+
+		#finish {
+			margin-left: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="info-container" id="bigcontainer">
+
+		<div class="vertsect" id="header-text">
+			<h3>Purchasing tickets for @e.eventName</h3>
+		</div>
+		<br />
+		<div class="vertsect" id="username">
+			<h4>Purchasing for @u.UserName:</h4>
+		</div>
+		<br />
+		<div class="vertsect" id="ticketlist">
+			<ul id="ticketdata">
+				@foreach (var t in t_list)
+				{
+					<li>Ticket to @e.eventName ............. $@t.FormatPrice()</li>
+				}
+			</ul>
+		</div>
+		<br />
+		<div class="vertsect" id="totaldata">
+			<p id="subtotal">subtotal: $@t_subtotal</p>
+			<br />
+			<p id="total">total: $@t_total</p>
+		</div>
+		<div class="vertsect" id="buttoncontainer">
+			<form id="goback" method="get" action="CheckEvent">
+				<input type="hidden" name="EventName" value="@e.eventName" />
+				<input type="hidden" name="userID" value="@u.Id" />
+				<input type="submit" value="Go Back" />
+			</form>
+			<form id="finish" method="post" action="Checkout">
+				<input type="hidden" name="user" value="@u.Id" />
+				<input type="hidden" name="purchase" value="@finalized_purchase" />
+				<input type="submit" value="Finish Purchase" />
+			</form>
+		</div>
+
+	</div>
+</body>

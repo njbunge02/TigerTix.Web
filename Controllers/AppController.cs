@@ -18,7 +18,7 @@ namespace TigerTix.Web.Controllers
         //Private repository objects to store all input users and events
         private readonly IUserRepository _userRepository;
         private readonly IEventRepository _eventRepository;
-
+        private readonly IPurchaseRepository _purchaseRepository;
 
         /*Constructor for the App Controller
          *
@@ -26,11 +26,16 @@ namespace TigerTix.Web.Controllers
          *@param eventRepository...Represents a pool of Event objects for storage, accessing, and altering
          *@param web...Represents the environment that the application will be running in
          */
-        public AppController(IUserRepository userRepository, IEventRepository eventRepository, IWebHostEnvironment web)
+        public AppController(IUserRepository userRepository,
+                             IEventRepository eventRepository,
+                             IPurchaseRepository purchaseRepository,
+                             IWebHostEnvironment web)
         {
             //Populate the private fields
             _userRepository = userRepository;
             _eventRepository = eventRepository;
+            _purchaseRepository = purchaseRepository;
+            //_ticketRepository = ticketRepository;
             hostingEnvironment = web;
         }
 
@@ -59,7 +64,7 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The Index_Auth view
          */
-   
+        [Route("Home")]
         public IActionResult Index_Auth(int userID) { return View(userID);  }
 
         /*Provides the site code for the 'Add a User' page for displaying and
@@ -96,6 +101,7 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The Event view
          */
+        [Route("CreateEvent")]
         public IActionResult Event() { return View(); }
 
         /*Provides the site code for the 'See Events' page, which displays a
@@ -114,7 +120,7 @@ namespace TigerTix.Web.Controllers
             return View(results.ToList());
         }
 
-
+        [Route("ViewEvents/Auth")]
         public IActionResult View_Events_Auth(int userID)
         {
 
@@ -125,7 +131,7 @@ namespace TigerTix.Web.Controllers
             return View(userEventPair);
         }
 
-      
+        [Route("Login")]
         public IActionResult Login()
         {
             return View();
@@ -162,6 +168,8 @@ namespace TigerTix.Web.Controllers
         [HttpGet]
      
 
+        [Route("ViewEvents/CheckEvent")]
+
         public IActionResult CheckEvent(string EventName, int userID)
         {
             //Search the controller's event repository for an event with a
@@ -175,6 +183,56 @@ namespace TigerTix.Web.Controllers
             return View(userEventPair);
         }
 
+        [Route("ViewEvents/Checkout")]
+        /*Provides the site code for the 'Checkout' page, which takes information
+         *  from the previous 'CheckEvent' tab and stores it as a payment
+         *  
+         *@param ticketAmnt.....Represents the number of tickets in the purchase
+         *@param cardNumber.....Represents the number of the payment card
+         *@param cardExpiryMo...Represents the month of the card's expiration date
+         *@param cardExpiryYr...Represents the year of the card's expiration date
+         *@param cardCVV........Represents the card verification value
+         *@param userID.........Represents the ID of the user
+         *@param eventID........Represents the ID of the event the tickets belong to
+         *
+         *@return...The checkout view
+         */
+        public IActionResult Checkout(int ticketAmnt, int cardNumber,
+                                      int cardExpiryMo, int cardExpiryYr,
+                                      int cardCVV, int userID, int eventID)
+        {
+            var currEvent = _eventRepository.GetEventId(eventID);
+            var currUser = _userRepository.GetUserId(userID);
+            var currPurchase = new PurchaseModel();
+            for (int x = 0; x < ticketAmnt; x++)
+            {
+                var currTicket = new Ticket();
+                currTicket.TicketHolder = userID;
+                currTicket.TicketPrice = currEvent.pricePerTicket;
+                currTicket.eventID = currEvent.Id;
+                currPurchase.addTicket(currTicket);
+            }
+            currPurchase.Holder = currUser;
+            currPurchase.currentEvent = currEvent;
+
+            currPurchase.cardNum = cardNumber;
+            currPurchase.cardExpiryYr = cardExpiryYr;
+            currPurchase.cardExpiryMo = cardExpiryMo;
+            currPurchase.cardCVV = cardCVV;
+
+            return View(currPurchase);
+        }
+
+        [HttpPost]
+        [Route("ViewEvents/Checkout")]
+        public IActionResult Checkout(int user, Purchase purchase)
+        {
+            _purchaseRepository.SavePurchase(purchase);
+            _purchaseRepository.SaveAll();
+
+            return RedirectToAction("View_Events_Auth", new {userID = user});
+        }
+
         /*Provides the site code for the 'Add Users' page, which takes account
          *  information and creates a new User object for the site user
          *
@@ -183,7 +241,7 @@ namespace TigerTix.Web.Controllers
          *@return...The AddUser view
          */
         [HttpPost]
-      
+        [Route("Login")]
         public IActionResult Login(userModel user)
         {
 
@@ -227,8 +285,6 @@ namespace TigerTix.Web.Controllers
 
         }
 
-  
-
         /*Provides the site code for the 'Add Event' page, which posts a new
          *  event object to the controller's event repository
          *
@@ -238,7 +294,7 @@ namespace TigerTix.Web.Controllers
          *@return...The Event view
          */
         [HttpPost]
-
+        [Route("CreateEvent")]
         public IActionResult Event(Event eventInput, IFormFile imageFile)
         {
             //If an image has been provided, store it in the site's data files
@@ -257,7 +313,7 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpGet]
-  
+        [Route("Signup")]
         public IActionResult SignUp()
         {
             var model = new userModel(); // Create a new instance of the model
@@ -265,7 +321,7 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpPost]
-
+        [Route("Signup")]
         public IActionResult SignUp(userModel model)
         {
             // Validate user input
@@ -298,7 +354,7 @@ namespace TigerTix.Web.Controllers
             return View(model);
         }
 
-    // Method to generate a random salt
+        // Method to generate a random salt
         private byte[] GenerateSalt()
         {
             byte[] salt = new byte[32];
@@ -321,10 +377,10 @@ namespace TigerTix.Web.Controllers
 
         // Method to validate password
         private bool ValidatePassword(string inputPassword, string hashedPassword, byte[] salt)
-{
-        string hashedInputPassword = HashPassword(inputPassword, salt);
-        return hashedPassword == hashedInputPassword;
-}   
+        {
+                string hashedInputPassword = HashPassword(inputPassword, salt);
+                return hashedPassword == hashedInputPassword;
+        }   
 
 
     }

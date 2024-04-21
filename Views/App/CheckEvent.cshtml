@@ -3,7 +3,7 @@
 
 @{
     Layout = "_Layout";
-    ViewData["Title"] = "Event Info"; //Give the page a title
+    ViewData["Title"] = "Purchase a Ticket!"; //Give the page a title
 
     var u = Model.Key;
     var e = Model.Value; //Create a variable that references the event passed to this view
@@ -22,7 +22,8 @@
         }
 
         #exp_cvv {
-            margin-top: 15px;
+            margin-top: 10px;
+            margin-bottom: 15px;
         }
 
         #TextDescription {
@@ -34,6 +35,7 @@
 
         #num {
             width: 200px;
+            margin-left: 16px;
         }
 
         #expmo {
@@ -57,15 +59,34 @@
         }
 
         #cvvbox {
-            margin-left: 22px;
+            margin-left: 36px;
         }
 
         #cardsubmission {
-            margin-left: 30px;
+            margin-left: 75px;
+        }
+
+        #ticketnum {
+            width: 45px;
+            margin-left: 10px;
+        }
+
+        #ticketinfo {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #numbox {
+            margin-top: 30px;
+            margin-bottom: 0px;
+        }
+
+        #buttonContainer {
+            margin-top: 0px;
         }
     </style>
 
-    <title>testpage</title>
+    <title>Purchase a Ticket!</title>
 </head>
 
 <body>
@@ -84,7 +105,11 @@
         <div class="vertcolumn" id="TicketInfo">
 
             <!--Card information input-->
-            <form method="post" action="StorePay">
+            <form method="get" action="Checkout">
+                <div class="horzsect" id="ticketinfo">
+                    <label class="sittogether">How many Tickets?</label>
+                    <input class="sittogether" type="number" id="ticketnum" name="ticketAmnt" />
+                </div>
                 <div class="horzsect" id="numbox">
                     <label class="sittogether">Number:</label>
                     <input class="sittogether" type="text" id="num" name="cardNumber" pattern="[0-9]{16}" />
@@ -115,12 +140,12 @@
                         <input type="text" id="cvv" name="cardCVV" placeholder="XXX" />
                     </div>
                 </div>
+                <input type="hidden" name="userID" value="@u.Id" />
+                <input type="hidden" name="eventID" value="@e.Id" />
 
                 <!--Submission and 'remember me' buttons go here-->
                 <div class="horzsect" id="buttonContainer">
-                    <label>Remember me</label>
-                    <input type="checkbox" class="sittogether" id="memory" name="save" />
-                    <input type="submit" class="sittogether" id="cardsubmission" name="submitCard" />
+                    <input type="submit" class="sittogether" id="cardsubmission" name="submitCard" value="Proceed to Checkout" />
                 </div>
             </form>
 
