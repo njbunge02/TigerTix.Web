@@ -55,7 +55,8 @@
         <div>
         <h2 >@e.eventName</h2>
         <p>Description here</p>
-        <form method="get" action="Login">
+        <form method="get" action="CheckEvent">
+            <input type="hidden" name="EventName" value="@e.eventName" />
             <input type="submit" value="Purchase A Ticket!" />
         </form>
         </div>

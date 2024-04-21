@@ -165,19 +165,17 @@ namespace TigerTix.Web.Controllers
          *@return...The CheckEvent view
          */
         [HttpGet]
-     
-
-  
-
-        public IActionResult CheckEvent(string EventName, int userID)
+        public IActionResult CheckEvent(string EventName)
         {
             //Search the controller's event repository for an event with a
             //  matching name to the one passed in, store it and pass it to
             //  the model of the CheckEvent.cshtml view
-            var user = _userRepository.GetUserId(userID);
+            var signedInUser = _userRepository.GetUserByUsername(Request.Cookies["SignedInUser"]);
+
+            
             var result = _eventRepository.GetEventByName(EventName);
 
-            var userEventPair = new KeyValuePair<User, Event>(user, result);
+            var userEventPair = new KeyValuePair<User, Event>(signedInUser, result);
 
             return View(userEventPair);
         }
