@@ -235,7 +235,7 @@ namespace TigerTix.Web.Controllers
             _purchaseRepository.SavePurchase(purchase);
             _purchaseRepository.SaveAll();
 
-            return RedirectToAction("View_Events_Auth", new {userID = user});
+            return RedirectToAction("View_Events", new {userID = user});
         }
 
         /*Provides the site code for the 'Add Users' page, which takes account
