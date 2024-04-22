@@ -1,7 +1,12 @@
 @model User
 @{
 	ViewData["Title"] = "Home Page";
-	Layout = "_Layout";
+	
+    if (Model.account_type == "Organizer")
+        Layout = "_OrganizerLayout";
+    else
+         Layout = "_Layout";
+         
 }
 
 <style>
@@ -58,16 +63,16 @@
 	<div class="sitCenter" id="button_holder">
 		<div id="form_holder">
 
-			<form class="redirect" id="see_events" action="ViewEvents">
+			<form class="redirect" id="see_events" action="View_Events">
 				<input type="submit" class="submit-button" value="See Events" />
 			</form>
 			
-			<form class="redirect" id="log_in" action="Login">
-				<input type="submit" class="submit-button" value="Log in" />
+			<form class="redirect" id="log_in" action="Profile">
+				<input type="submit" class="submit-button" value="Profile" />
 			</form>
 
-			<form class="redirect" id="sign_up" action="Signup">
-				<input type="submit" class="submit-button" value="Sign up" />
+			<form class="redirect" id="sign_up" action="SignOut">
+				<input type="submit" class="submit-button" value="SignOut" />
 			</form>
 
 		</div>

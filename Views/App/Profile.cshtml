@@ -1,6 +1,13 @@
 @model User
 @{
-    Layout = "_Layout";
+    ViewData["Title"] = "Profile";
+
+    if (Model.account_type == "Organizer")
+        Layout = "_OrganizerLayout";
+    else
+         Layout = "_Layout";
+
+
 }
 
 <h1>@Model.firstName @Model.lastName</h1>
