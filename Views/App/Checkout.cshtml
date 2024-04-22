@@ -12,7 +12,7 @@
 	var t_subtotal = subtotal.ToString("##########.00");
 	var t_total = subtotal.ToString("##########.00");
 
-	var finalized_purchase = Model.MakePurchase;
+	var markdown = 0.0;
 
 	ViewData["Title"] = "Checkout";
 }
@@ -105,8 +105,9 @@
 				<input type="submit" value="Go Back" />
 			</form>
 			<form id="finish" method="post" action="Checkout">
-				<input type="hidden" name="user" value="@u.Id" />
-				<input type="hidden" name="purchase" value="@finalized_purchase" />
+				<input type="hidden" name="model" value="@Model" />
+				<input type="hidden" name="subtotal" value="@subtotal" />
+				<input type="hidden" name="markdown" value="@markdown" />
 				<input type="submit" value="Finish Purchase" />
 			</form>
 		</div>

@@ -24,7 +24,7 @@ namespace TigerTix.Web.Data
          *@return...A List containing every purchase made by the user matching the
          * provided userID
          */
-        IEnumerable<Purchase> GetPurchaseHistory(int userID);
+        IEnumerable<Purchase> GetPurchaseHistory(string username);
 
         /*Provides a purchase object that is retrieved by its unique ID
          * 

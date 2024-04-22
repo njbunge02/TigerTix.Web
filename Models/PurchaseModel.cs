@@ -18,14 +18,16 @@ namespace TigerTix.Web.Models
         public int cardExpiryMo { get; set; }
         public int cardCVV { get; set; }
 
-        public PurchaseModel() { Cart = new List<Ticket>(); }
+        public PurchaseModel() {
+            Cart = new List<Ticket>();
+        }
 
         public Purchase MakePurchase(double subtotal, double markdown)
         {
             var finalPurchase = new Purchase();
             finalPurchase.cardNum = cardNum;
-            finalPurchase.TicketHolder = Holder.Id;
-            finalPurchase.eventID = currentEvent.Id;
+            finalPurchase.TicketHolder = Holder.UserName;
+            finalPurchase.eventName = currentEvent.eventName;
             finalPurchase.subtotal = subtotal;
             finalPurchase.DiscountApplied = markdown;
             finalPurchase.TotalCost = subtotal - markdown;

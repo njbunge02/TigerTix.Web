@@ -15,6 +15,7 @@ namespace TigerTix.Web.Data
         public void SavePurchase(Purchase selectedPurchase)
         {
             //Add the purchase to the database, and save
+            Console.WriteLine("\n" + selectedPurchase.eventName);
             _context.Add(selectedPurchase);
             _context.SaveChanges();
         }
@@ -38,10 +39,10 @@ namespace TigerTix.Web.Data
          *@return...A List containing every purchase made by the user matching the
          * provided userID
          */
-		public IEnumerable<Purchase> GetPurchaseHistory(int userID)
+		public IEnumerable<Purchase> GetPurchaseHistory(string username)
         {
             var purchaseList = from p in _context.Purchases
-                               where p.TicketHolder == userID
+                               where p.TicketHolder == username
                                select p;
             return purchaseList.ToList();
         }

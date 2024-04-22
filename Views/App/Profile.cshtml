@@ -1,12 +1,26 @@
-@model User
+@model KeyValuePair<User, IEnumerable<Purchase>>;
 @{
     Layout = "_Layout";
+
+    var u = Model.Key;
+    var h = Model.Value;
 }
 
-<h1>@Model.firstName @Model.lastName</h1>
+<h1>@u.firstName @u.lastName</h1>
 
-<label>Username: @Model.UserName</label>
+<label>Username: @u.UserName</label>
 <br>
-<label>Account Type: @Model.account_type</label>
+<label>Account Type: @u.account_type</label>
+<br />
+<ul>
+    @foreach (var p in h)
+    {
+    <li>Tickets to @p.eventName</li>
+    <li><ul>
+        <li>Tickets...@p.PurchaseList.Count()</li>
+        <li>Total.....@p.TotalCost</li>
+    </ul></li>
+    }
+</ul>
 
 

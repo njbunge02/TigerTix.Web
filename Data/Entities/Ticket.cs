@@ -26,13 +26,13 @@ namespace TigerTix.Web.Data.Entities
 
 
         [Required]
-        public int eventID { get; set; }
+        public string eventName { get; set; }
 
         [Required]
         public int Id { get; set; }
 
         [Required]
-        public int TicketHolder { get; set; }
+        public string TicketHolder { get; set; }
 
         [Required]
         public IEnumerable<Ticket> PurchaseList { get; set; }
