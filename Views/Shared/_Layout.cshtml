@@ -13,9 +13,9 @@
     <style>
         .div-footer {
             position: fixed;
-            bottom: 30px;
+            bottom: 0px;
             width: 100%;
-    }
+        }
     /* Adjusting nav item alignment */
         .navbar-nav {
             width: 100%;
@@ -75,12 +75,13 @@
         </main>
     </div>
 
-    <div class="div-footer">
+    <div class="div-footer" style="background-color: white;">
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - TigerTix - <a asp-area="" asp-controller="App" asp-action="Index">Privacy</a>
+             <p>For support, call +1(800) 588-2300</p>
         </div>
-        <div class="container"><p>For support, call +1(800) 588-2300</p></div>
+     
     </footer>
     </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
