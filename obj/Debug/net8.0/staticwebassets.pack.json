@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets/spikeball.jpg"
     },
     {
+      "Id": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/wsbflady.png",
+      "PackagePath": "staticwebassets/wsbflady.png"
+    },
+    {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.TigerTix.Web.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

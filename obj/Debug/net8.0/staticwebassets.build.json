@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yl2zR/NGoCe3iR4y8dWS+r9x7rNBYbAftoz8TjPWw2s=",
+  "Hash": "g21HZDdd7tSDHenFyQ5le3RlCHoqLkiE0rAH9W7sJF0=",
   "Source": "TigerTix.Web",
   "BasePath": "_content/TigerTix.Web",
   "Mode": "Default",
@@ -205,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/spikeball.jpg"
+    },
+    {
+      "Identity": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/wsbflady.png",
+      "SourceId": "TigerTix.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nick/Documents/GitHub/TigerTix.Web/wwwroot/",
+      "BasePath": "_content/TigerTix.Web",
+      "RelativePath": "wsbflady.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/wsbflady.png"
     }
   ]
 }
