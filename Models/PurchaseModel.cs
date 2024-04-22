@@ -26,7 +26,7 @@ namespace TigerTix.Web.Models
         {
             var finalPurchase = new Purchase();
             finalPurchase.cardNum = cardNum;
-            finalPurchase.TicketHolder = Holder.UserName;
+            //finalPurchase.TicketHolder = Holder.UserName;
             finalPurchase.eventName = currentEvent.eventName;
             finalPurchase.subtotal = subtotal;
             finalPurchase.DiscountApplied = markdown;

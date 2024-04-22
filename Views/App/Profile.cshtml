@@ -4,6 +4,8 @@
 
     var u = Model.Key;
     var h = Model.Value;
+
+    
 }
 
 <h1>@u.firstName @u.lastName</h1>
@@ -15,11 +17,7 @@
 <ul>
     @foreach (var p in h)
     {
-    <li>Tickets to @p.eventName</li>
-    <li><ul>
-        <li>Tickets...@p.PurchaseList.Count()</li>
-        <li>Total.....@p.TotalCost</li>
-    </ul></li>
+    <li>Purchased @p.numtickets to @p.eventName, costing $@p.TotalCost.ToString("##########.00")</li>
     }
 </ul>
 

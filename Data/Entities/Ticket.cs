@@ -34,8 +34,10 @@ namespace TigerTix.Web.Data.Entities
         [Required]
         public string TicketHolder { get; set; }
 
+        public IEnumerable<Ticket>? PurchaseList { get; set; }
+
         [Required]
-        public IEnumerable<Ticket> PurchaseList { get; set; }
+        public int numtickets { get; set; }
 
         [Required]
         public double subtotal { get; set; }

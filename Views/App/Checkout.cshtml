@@ -105,9 +105,12 @@
 				<input type="submit" value="Go Back" />
 			</form>
 			<form id="finish" method="post" action="Checkout">
-				<input type="hidden" name="model" value="@Model" />
 				<input type="hidden" name="subtotal" value="@subtotal" />
 				<input type="hidden" name="markdown" value="@markdown" />
+				<input type="hidden" name="username" value="@u.UserName" />
+				<input type="hidden" name="numTickets" value="@t_list.Count()"
+				<input type="hidden" name="cardnum" value="@Model.cardNum" />
+				<input type="hidden" name="eventName" value="@e.eventName" />
 				<input type="submit" value="Finish Purchase" />
 			</form>
 		</div>
