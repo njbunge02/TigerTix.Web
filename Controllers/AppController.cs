@@ -109,6 +109,11 @@ namespace TigerTix.Web.Controllers
                                         select events;
             //Convert the results into a list and pass it to the model of the
             //  View_Events.cshtml view
+
+            
+          
+
+
             return View(results.ToList());
         }
 
@@ -222,8 +227,7 @@ namespace TigerTix.Web.Controllers
          *@return...The AddUser view
          */
         [HttpPost]
-     
-        public IActionResult Login(userModel user)
+             public IActionResult Login(userModel user)
         {
 
        
