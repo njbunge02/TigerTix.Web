@@ -6,7 +6,6 @@ using System;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
-using TigerTix.Web.Migrations;
 
 
 namespace TigerTix.Web.Controllers
@@ -43,21 +42,29 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The Index view
          */
-        public IActionResult Index() {
-
+        public IActionResult Index() { 
+            
             var signedInUser = Request.Cookies["SignedInUser"];
-            if (string.IsNullOrEmpty(signedInUser))
-            {
-                // Handle case where signedInUser is not set
-                return RedirectToAction("Login", "App"); // Redirect to login page or handle appropriately
-
-            }
-            User results = _userRepository.GetUserByUsername(signedInUser);
-
+        if (string.IsNullOrEmpty(signedInUser))
+        {
+        // Handle case where signedInUser is not set
+        return RedirectToAction("Login", "App"); // Redirect to login page or handle appropriately
+        
+        }
+           User results = _userRepository.GetUserByUsername(signedInUser);
+                      
             //Convert the group of all events to a list and pass it to the
             //  model in the EventsDB view
             return View(results);
-        }
+            }
+
+        /*Provides the site code for the 'Index' default page after the user
+         * has signed in
+         *
+         *@return...The Index_Auth view
+         */
+      
+        public IActionResult Index_Auth(int userID) { return View(userID);  }
 
         /*Provides the site code for the 'Add a User' page for displaying and
          *  taking user input
@@ -82,7 +89,7 @@ namespace TigerTix.Web.Controllers
             //Create a 'results' variable that will store each event in the
             //  controller's repository
             var results = from events in _eventRepository.GetAllEvents()
-                          select events;
+                                        select events;
             //Convert the group of all events to a list and pass it to the
             //  model in the EventsDB view
             return View(results.ToList());
@@ -93,7 +100,7 @@ namespace TigerTix.Web.Controllers
          *
          *@return...The Event view
          */
-
+   
         public IActionResult Event() { return View(); }
 
         /*Provides the site code for the 'See Events' page, which displays a
@@ -106,17 +113,29 @@ namespace TigerTix.Web.Controllers
             //Create a 'results' variable, and append each event in the controller's
             //  event repository to it
             var results = from events in _eventRepository.GetAllEvents()
-                          select events;
+                                        select events;
             //Convert the results into a list and pass it to the model of the
             //  View_Events.cshtml view
 
-
-
+            
+          
 
 
             return View(results.ToList());
         }
 
+    
+        public IActionResult View_Events_Auth(int userID)
+        {
+
+            var results = from events in _eventRepository.GetAllEvents()
+                          select events;
+            var userEventPair = new KeyValuePair<int, IEnumerable<Event>>( userID, results.ToList() );
+
+            return View(userEventPair);
+        }
+
+    
         public IActionResult Login()
         {
             return View();
@@ -129,21 +148,21 @@ namespace TigerTix.Web.Controllers
 
         public IActionResult Profile()
         {
-            var signedInUser = Request.Cookies["SignedInUser"];
-            if (string.IsNullOrEmpty(signedInUser))
-            {
-                // Handle case where signedInUser is not set
-                return RedirectToAction("Login", "App"); // Redirect to login page or handle appropriately
-
-            }
-            User results = _userRepository.GetUserByUsername(signedInUser);
-            var history = _purchaseRepository.GetPurchaseHistory(results.UserName);
-
-            var userInfo = new KeyValuePair<User, IEnumerable<Purchase>>(results, history);
-
+        var signedInUser = Request.Cookies["SignedInUser"];
+        if (string.IsNullOrEmpty(signedInUser))
+        {
+        // Handle case where signedInUser is not set
+        return RedirectToAction("Login", "App"); // Redirect to login page or handle appropriately
+        
+        }
+           User results = _userRepository.GetUserByUsername(signedInUser);
+                      
             //Convert the group of all events to a list and pass it to the
             //  model in the EventsDB view
-            return View(userInfo);
+
+ 
+
+            return View(results);
         }
 
         /*Provides the site code for the 'Event Info' page, which takes payment info
@@ -161,7 +180,7 @@ namespace TigerTix.Web.Controllers
             //  the model of the CheckEvent.cshtml view
             var signedInUser = _userRepository.GetUserByUsername(Request.Cookies["SignedInUser"]);
 
-
+            
             var result = _eventRepository.GetEventByName(EventName);
 
             var userEventPair = new KeyValuePair<User, Event>(signedInUser, result);
@@ -169,7 +188,7 @@ namespace TigerTix.Web.Controllers
             return View(userEventPair);
         }
 
-
+     
         /*Provides the site code for the 'Checkout' page, which takes information
          *  from the previous 'CheckEvent' tab and stores it as a payment
          *  
@@ -198,33 +217,25 @@ namespace TigerTix.Web.Controllers
                 currTicket.eventID = currEvent.Id;
                 currPurchase.addTicket(currTicket);
             }
-            currPurchase.Holder = _userRepository.GetUserId(userID);
+            currPurchase.Holder = currUser;
             currPurchase.currentEvent = currEvent;
 
             currPurchase.cardNum = cardNumber;
             currPurchase.cardExpiryYr = cardExpiryYr;
             currPurchase.cardExpiryMo = cardExpiryMo;
-            currPurchase.cardCVV = cardCVV; ;
+            currPurchase.cardCVV = cardCVV;
 
             return View(currPurchase);
         }
 
         [HttpPost]
-        public IActionResult Checkout(double subtotal, double markdown, string eventName,
-                                      string username, int numTickets, int cardnum)
+      
+        public IActionResult Checkout(int user, Purchase purchase)
         {
-            var purchase = new Purchase();
-            purchase.eventName = eventName;
-            purchase.TicketHolder = username;
-            purchase.numtickets = numTickets;
-            purchase.DiscountApplied = markdown;
-            purchase.subtotal = subtotal;
-            purchase.TotalCost = subtotal - markdown;
-            purchase.cardNum = cardnum;
             _purchaseRepository.SavePurchase(purchase);
             _purchaseRepository.SaveAll();
 
-            return RedirectToAction("View_Events");
+            return RedirectToAction("View_Events", new {userID = user});
         }
 
         /*Provides the site code for the 'Add Users' page, which takes account
@@ -287,6 +298,7 @@ namespace TigerTix.Web.Controllers
          *@return...The Event view
          */
         [HttpPost]
+    
         public IActionResult Event(Event eventInput, IFormFile imageFile)
         {
             //If an image has been provided, store it in the site's data files
@@ -305,6 +317,7 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpGet]
+     
         public IActionResult SignUp()
         {
             var model = new userModel(); // Create a new instance of the model
@@ -312,6 +325,7 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpPost]
+     
         public IActionResult SignUp(userModel model)
         {
             // Validate user input
